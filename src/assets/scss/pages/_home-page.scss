@@ -1,0 +1,781 @@
+//----------Banner Home----------
+.banner-home {
+  position: relative;
+  background: url("../images/banner-header.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 562px;
+  @include flex;
+  justify-content: center;
+  align-items: flex-end;
+  //Button
+  .btn-apply {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background: #000000;
+    @include border-radius(8px);
+    -webkit-box-shadow: 0px 0px 5px 1px #f2792a;
+    -moz-box-shadow: 0px 0px 5px 1px #f2792a;
+    box-shadow: 0px 0px 5px 1px #f2792a;
+    margin-bottom: 100px;
+    //Overlay text
+    p {
+      position: relative;
+      z-index: 2;
+      @include flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 19px;
+      font-weight: 800;
+      color: #f2792a;
+      height: 100%;
+      @include transition(all 0.3s);
+    }
+    //Overlay background radial
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: -moz-radial-gradient(circle, rgba(255,127,0,1) 0%, rgba(255,190,0,1) 0%, rgba(255,127,0,1) 100%);
+      background: -webkit-radial-gradient(circle, rgba(255,127,0,1) 0%, rgba(255,190,0,1) 0%, rgba(255,127,0,1) 100%);
+      background: radial-gradient(circle, rgba(255,127,0,1) 0%, rgba(255,190,0,1) 0%, rgba(255,127,0,1) 100%);
+      opacity: 0;
+      @include border-radius(8px);
+      @include transition(all 0.3s);
+    }
+    //Overlay background white opacity
+    &:after {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 5px;
+      right: 10px;
+      bottom: 5px;
+      background: rgba(255, 255, 255, .12);
+      @include border-radius-separate(0px, 8px, 8px, 0px);
+      @include transition(all 0.3s);
+      opacity: 0;
+    }
+    //Hover fade overlay
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+      &:after {
+        opacity: 1;
+      }
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+  //Scroll down
+  .scroll-down {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    cursor: pointer;
+  }
+}
+
+//---Reponsive Banner Home-----
+@media #{$info-ipad-pro} {
+  .banner-home {
+    //Scroll down
+    .scroll-down {
+      bottom: -16px;
+    }
+  }
+}
+
+@media #{$info-ipad} {
+  .banner-home {
+    height: 450px;
+    //Button
+    .btn-apply {
+      width: 200px;
+      height: 40px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media #{$info-phone-normal} {
+  .banner-home {
+    height: 250px;
+    //Button
+    .btn-apply {
+      width: 180px;
+      height: 40px;
+      margin-bottom: 30px;
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
+//-----------------------------------------------------NEXT
+
+
+
+//----------Banner About----------
+.banner-about {
+  position: relative;
+  background: url("../images/banner-about.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  margin-top: -100px;
+  .about {
+    @include flex;
+    padding: 160px 0px 30px;
+    //Image
+    &-image {
+      width: 40%;
+      text-align: center;
+    }
+    //Content
+    &-content {
+      width: 60%;
+      margin-top: 65px;
+      padding-left: 50px;
+      .item {
+        margin-bottom: 15px;
+        h4 {
+          font-size: 18px;
+          font-weight: 900;
+          color: #ffffff;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          color: #2a354c;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+//----------Responsive Banner About----------
+@media #{$info-ipad-pro} {
+  .banner-about {
+    background: url("../images/banner-photo.jpg") no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    .about {
+      padding: 50px 0px 30px;
+      align-items: center;
+      //Image
+      &-image {
+        width: 35%;
+        text-align: center;
+      }
+      //Content
+      &-content {
+        width: 65%;
+        margin-top: 20px;
+        padding-left: 30px;
+        .item {
+          margin-bottom: 15px;
+          h4 {
+            font-size: 18px;
+            font-weight: 900;
+            color: #ffffff;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 500;
+            color: #2a354c;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$info-ipad} {
+  .banner-about {
+    .about {
+      flex-direction: column-reverse;
+      //Image
+      &-image {
+        width: 100%;
+        img {
+          width: 300px;
+        }
+      }
+      //Content
+      &-content {
+        width: 100%;
+        margin-top: 0;
+        padding-left: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+
+
+//-----------------------------------------------------NEXT
+
+
+
+//----------Banner Contest----------
+.banner-contest {
+  position: relative;
+  background: url("../images/banner-contest.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  //height: 782px;
+  padding-top: 140px;
+  margin-top:-150px;
+  //Timeline
+  ul {
+    position: relative;
+    color: #ffffff;
+    width: 730px;
+    margin: auto;
+    //Height timeline
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 4;
+      top: 55px;
+      bottom: 100px;
+      left: 50%;
+      width: 2px;
+      background: #ffffff;
+      margin-left: -1px;
+    }
+    //Item timeline
+    li {
+      position: relative;
+      list-style: none;
+      width: 50%;
+      box-sizing: border-box;
+      clear: both;
+      @include flex;
+      justify-content: flex-end;
+      margin-bottom: 34px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        background: #ffffff;
+        @include border-radius(50%);
+        top: 50%;
+        margin-top: -8.5px;
+      }
+      &:after {content: '';
+        position: absolute;
+        width: 31px;
+        height: 31px;
+        border: 2px solid #f2792a;
+        @include border-radius(50%);
+        top: 50%;
+        margin-top: -15.5px;}
+      .item {
+        background-color: rgba(0, 0, 0, .25);
+        padding: 8px 11px 24px 11px;
+        border-top: 1px solid #bfbfbf;
+        width: 250px;
+        h4 {
+          font-size: 20px;
+          font-weight: 800;
+          color: #f2792a;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 11px;
+          font-weight: 600;
+          color: #ffffff;
+        }
+      }
+      //Timeline 1 3 5
+      &:nth-child(odd) {
+        float: left;
+        &:before {
+          right: -8.5px;
+        }
+        &:after {
+          right: -15.5px;
+        }
+        a {
+          margin-right: 24px;
+        }
+      }
+      //First child
+      &:first-child {
+        a {
+          margin-right: 0px;
+        }
+      }
+      //Timeline 2 4 6
+      &:nth-child(even) {
+        float: right;
+        flex-direction: row-reverse;
+        &:before {
+          left: -8.5px;
+        }
+        &:after {
+          left: -15.5px;
+        }
+        a {
+          margin-left: 24px;
+        }
+      }
+      //Last child
+      &:nth-last-child(2) {
+        margin-bottom: 0px;
+      }
+    }
+    //fix float
+    .clear {
+      clear: both;
+    }
+  }
+  //Button apply now
+  .apply-contest {
+    text-align: center;
+    .btn-apply {
+      position: relative;
+      display: inline-block;
+      width: 180px;
+      height: 40px;
+      background: #000000;
+      @include border-radius(8px);
+      -webkit-box-shadow: 0px 0px 5px 1px #f2792a;
+      -moz-box-shadow: 0px 0px 5px 1px #f2792a;
+      box-shadow: 0px 0px 5px 1px #f2792a;
+      margin: 30px 0px;
+      //Overlay text
+      p {
+        position: relative;
+        z-index: 2;
+        @include flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+        font-weight: 800;
+        color: #f2792a;
+        height: 100%;
+        @include transition(all 0.3s);
+      }
+      //Overlay background radial
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: -moz-radial-gradient(circle, rgba(255,127,0,1) 0%, rgba(255,190,0,1) 0%, rgba(255,127,0,1) 100%);
+        background: -webkit-radial-gradient(circle, rgba(255,127,0,1) 0%, rgba(255,190,0,1) 0%, rgba(255,127,0,1) 100%);
+        background: radial-gradient(circle, rgba(255,127,0,1) 0%, rgba(255,190,0,1) 0%, rgba(255,127,0,1) 100%);
+        opacity: 0;
+        @include border-radius(8px);
+        @include transition(all 0.3s);
+      }
+      //Overlay background white opacity
+      &:after {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 5px;
+        right: 10px;
+        bottom: 5px;
+        background: rgba(255, 255, 255, .12);
+        @include border-radius-separate(0px, 8px, 8px, 0px);
+        @include transition(all 0.3s);
+        opacity: 0;
+      }
+      //Hover fade overlay
+      &:hover {
+        &:before {
+          opacity: 1;
+        }
+        &:after {
+          opacity: 1;
+        }
+        p {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+//----------Responsive Banner Contest----------
+@media #{$info-ipad-pro} {
+  .banner-contest {
+    background: url("../images/banner-contest-mobile.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 65px 0px 45px;
+    margin-top: 0px;
+  }
+}
+
+@media #{$info-ipad} {
+  .banner-contest {
+    //Timeline
+    ul {
+      width: 380px;
+      //Height timeline
+      &:before {
+        left: 0;
+      }
+      //Item timeline
+      li {
+        width: 100%;
+        flex-direction: row-reverse;
+        .item {
+          h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+          }
+        }
+        //Timeline 1 3 5
+        &:nth-child(odd) {
+          &:before {
+            left: -8.5px;
+          }
+          &:after {
+            left: -15.5px;
+          }
+          a {
+            margin-left: 14px;
+            margin-right: 0px;
+          }
+        }
+        //Timeline 2 4 6
+        &:nth-child(even) {
+          float: left;
+          flex-direction: row-reverse;
+          &:before {
+            left: -8.5px;
+          }
+          &:after {
+            left: -15.5px;
+          }
+          a {
+            margin-left: 14px;
+          }
+        }
+        //Last child
+        &:nth-last-child(2) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$info-phone-normal} {
+  .banner-contest {
+    //Timeline
+    ul {
+      width: 310px;
+      //Height timeline
+      &:before {
+        left: 0;
+      }
+      //Item timeline
+      li {
+        width: 100%;
+        flex-direction: row-reverse;
+        .item {
+          h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+          }
+        }
+        //Timeline 1 3 5
+        &:nth-child(odd) {
+          &:before {
+            left: -8.5px;
+          }
+          &:after {
+            left: -15.5px;
+          }
+          a {
+            margin-left: 14px;
+            margin-right: 0px;
+          }
+        }
+        //Timeline 2 4 6
+        &:nth-child(even) {
+          float: left;
+          flex-direction: row-reverse;
+          &:before {
+            left: -8.5px;
+          }
+          &:after {
+            left: -15.5px;
+          }
+          a {
+            margin-left: 14px;
+          }
+        }
+        //Last child
+        &:nth-last-child(2) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    //Button apply
+    .apply-contest {
+      .btn-apply {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+
+//-----------------------------------------------------NEXT
+
+
+
+//----------Sponsor----------
+.sponsors {
+  @include flex;
+  //All button
+  &-button {
+    width: 50%;
+    padding: 90px 0px;
+    background-color: #2a354c;
+    .title-common {
+      margin-bottom: 73px;
+    }
+    ul {
+      width: 390px;
+      margin: auto;
+      @include flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li {
+        list-style: none;
+        margin-bottom: 30px;
+        &:last-child,&:nth-last-child(2) {
+          margin-bottom: 0px;
+        }
+        a {
+          position: relative;
+          display: inline-block;
+          width: 156px;
+          height: 44px;
+          background: #000000;
+          @include border-radius(8px);
+          //Overlay text
+          p {
+            position: relative;
+            z-index: 2;
+            @include flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 800;
+            color: #f2792a;
+            height: 100%;
+            @include transition(all 0.3s);
+          }
+          //Overlay background radial
+          &:before {
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            background: -moz-radial-gradient(circle, rgba(255,127,0,1) 0%, rgba(255,190,0,1) 0%, rgba(255,127,0,1) 100%);
+            background: -webkit-radial-gradient(circle, rgba(255,127,0,1) 0%, rgba(255,190,0,1) 0%, rgba(255,127,0,1) 100%);
+            background: radial-gradient(circle, rgba(255,127,0,1) 0%, rgba(255,190,0,1) 0%, rgba(255,127,0,1) 100%);
+            opacity: 0;
+            @include border-radius(8px);
+            @include transition(all 0.3s);
+          }
+          //Overlay background white opacity
+          &:after {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 5px;
+            right: 10px;
+            bottom: 5px;
+            background: rgba(255, 255, 255, .12);
+            @include border-radius-separate(0px, 8px, 8px, 0px);
+            @include transition(all 0.3s);
+            opacity: 0;
+          }
+          //Hover fade overlay
+          &:hover {
+            &:before {
+              opacity: 1;
+            }
+            &:after {
+              opacity: 1;
+            }
+            p {
+              color: #ffffff;
+            }
+          }
+          //Active class
+          &.active {
+            &:before {
+              opacity: 1;
+            }
+            &:after {
+              opacity: 1;
+            }
+            p {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+  //Logo brand
+  &-logo {
+    width: 50%;
+    background-color: #ffffff;
+  }
+}
+//----------Responsive Sponsor----------
+@media #{$info-ipad-pro} {
+  .sponsors {
+    //All button
+    &-button {
+      padding: 90px 0px;
+      .title-common {
+        margin-bottom: 43px;
+      }
+      ul {
+        width: 320px;
+        li {
+          a {
+            width: 140px;
+            height: 44px;
+          }
+        }
+      }
+    }
+    //Logo brand
+  }
+}
+
+@media #{$info-ipad} {
+  .sponsors {
+    flex-direction: column;
+    //All button
+    &-button {
+      width: 100%;
+      padding: 50px 0px;
+      ul {
+        width: 550px;
+        justify-content: space-around;
+      }
+    }
+    //Logo brand
+  }
+}
+
+@media #{$info-phone-normal} {
+  .sponsors {
+    //All button
+    &-button {
+      width: 100%;
+      padding: 50px 0px;
+      ul {
+        width: 100%;
+        padding: 0px 15px;
+        justify-content: space-around;
+        li {
+
+        }
+      }
+    }
+    //Logo brand
+  }
+}
+
+
+
+//-----------------------------------------------------NEXT
+
+
+
+//----------Photos----------
+.photos {
+  background: url("../images/banner-photo.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  padding: 80px 0px;
+  &-content {
+    //Title
+    .title-common {
+      margin-bottom: 35px;
+    }
+    //Slide for
+    .slide-photo-for {
+      .slick-list {
+        width: 550px;
+        height: 310px;
+        margin: 0px auto 20px;
+        box-shadow: 10px 10px 30px -4px rgba(0, 0, 0, 0.42);
+        .slick-track {
+          height: 100%;
+          .slide-item {
+            outline: none;
+            cursor: pointer;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    //Slide nav
+    .slide-photo-nav {
+      .slick-list {
+        margin-left:0px;
+        .slick-track {
+          .slide-item {
+            cursor: pointer;
+            outline: none;
+            margin-left:11px;
+          }
+        }
+      }
+    }
+  }
+}
+//----------Responsive Photos----------
+
+
+
+
+//-----------------------------------------------------NEXT

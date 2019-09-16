@@ -1,0 +1,66 @@
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul, ol, p {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+//Remove half left & right slick carousel
+.slide-photo-nav {
+  .slick-list {
+    padding:0 20% 0 0!important;
+  }
+}
+
+//Title common section home page
+.title-common {
+  text-align: center;
+  margin-bottom: 25px;
+  h3 {
+    position: relative;
+    @include inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: capitalize;
+    background: -moz-radial-gradient(circle, rgba(255,127,0,1) 0%, rgba(255,190,0,1) 0%, rgba(255,127,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,127,0,1) 0%, rgba(255,190,0,1) 0%, rgba(255,127,0,1) 100%);
+    background: radial-gradient(circle, rgba(255,127,0,1) 0%, rgba(255,190,0,1) 0%, rgba(255,127,0,1) 100%);
+    //padding: 6px 26px;
+    @include border-radius(8px);
+    width: 200px;
+    height: 48px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 5px;
+      right: 10px;
+      bottom: 5px;
+      background: rgba(255, 255, 255, .12);
+      @include border-radius-separate(0px, 8px, 8px, 0px);
+    }
+  }
+  @media #{$info-ipad} {
+    h3 {
+      font-size: 24px;
+    }
+  }
+}
