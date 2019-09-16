@@ -1,0 +1,107 @@
+#header {
+  background: #2a354c;
+  .navbar {
+    padding: 0;
+    //Logo
+    &-brand {
+      width: 100px;
+      padding: 0;
+      margin: 10px 0px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    //Toggle mobile
+    &-toggler {
+      padding: 0px;
+      outline: none;
+      border:none;
+      &-icon {
+        cursor: pointer;
+        width: auto;
+        height: auto;
+        .one{
+          background-color: #ffffff;
+          height: 4px;
+          margin: 6px 0px;
+          @include transition(all 0.4s);
+          width: 35px;
+        }
+        .two{
+          @extend .one;
+          width: 20px;
+        }
+        .three{
+          @extend .one;
+          width: 27px;
+        }
+        &.active{
+          .two{
+            width: 35px;
+          }
+          .three{
+            width: 35px;
+          }
+        }
+      }
+    }
+    //List menu
+    &-collapse {
+      ul {
+        li {
+          margin-left: 28px;
+          a {
+            font-weight: 800;
+            font-size: 16px;
+            text-transform: capitalize;
+            padding: 0px;
+            color: #ffffff;
+            @include transition(all 0.3s);
+            &:hover {
+              color: #f2792a;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// -----Responsive-----
+
+//Media special ( just screen 992 )
+@media screen and (width: 992px) {
+  #header {
+    .navbar {
+      //List menu
+      &-collapse {
+        ul {
+          li {
+            margin-left: 28px!important;
+          }
+        }
+      }
+    }
+  }
+}
+//End Media special ( just screen 992 )
+
+@media #{$info-ipad-pro} {
+  #header {
+    .navbar {
+      padding:0px;
+      //List menu
+      &-collapse {
+        ul {
+          margin: 20px 0px;
+          text-align: center;
+          li {
+            margin-left: 0;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
