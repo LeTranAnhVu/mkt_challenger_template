@@ -760,22 +760,94 @@
     }
     //Slide nav
     .slide-photo-nav {
+      position: relative;
+      width: 750px;
+      margin: auto;
+      overflow: hidden;
       .slick-list {
-        margin-left:0px;
+        height: 100px;
+        margin: 0 -6px;
         .slick-track {
+          height: 100%;
           .slide-item {
             cursor: pointer;
             outline: none;
-            margin-left:11px;
+            margin: 0 6px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
           }
+        }
+      }
+      .slick-arrow {
+        position: absolute;
+        top: 0;
+        z-index: 4;
+        width: 38px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.48);
+        @include flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &.prev {
+          left: 0px;
+        }
+        &.next {
+          right: 0px;
         }
       }
     }
   }
 }
 //----------Responsive Photos----------
-
-
+@media #{$info-ipad-pro} {
+  .photos {
+    padding: 60px 0px;
+    &-content {
+      //Slide nav
+      .slide-photo-nav {
+        width: 100%;
+        .slick-list {
+          height: 120px;
+        }
+      }
+    }
+  }
+}
+@media #{$info-ipad} {
+  .photos {
+    &-content {
+      //Slide for
+      .slide-photo-for {
+        .slick-list {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media #{$info-phone-normal} {
+  .photos {
+    &-content {
+      //Slide for
+      .slide-photo-for {
+        .slick-list {
+          width: 100%;
+          height: auto;
+        }
+      }
+      //Slide nav
+      .slide-photo-nav {
+        .slick-list {
+          height:110px;
+        }
+      }
+    }
+  }
+}
 
 
 //-----------------------------------------------------NEXT

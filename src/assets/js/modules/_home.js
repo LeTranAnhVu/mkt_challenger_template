@@ -36,9 +36,31 @@ export default class Home {
       slidesToScroll: 1,
       asNavFor: '.slide-photo-for',
       dots: false,
-      centerMode: true,
-      centerPadding: 20,
+      centerPadding:20,
+      arrows: true,
+      prevArrow:'<div class="prev"><img src="./assets/images/arrow-white-left.png" src="arrow"/></div>',
+      nextArrow:'<div class="next"><img src="./assets/images/arrow-white-right.png" src="arrow"/></div>',
       focusOnSelect: true,
+      infinite: true,
+      autoplay:true,
+      autoplaySpeed:4000,
+      cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+      ]
     });
   }
 }

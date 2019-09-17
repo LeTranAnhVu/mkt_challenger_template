@@ -4233,9 +4233,6 @@ h1, h2, h3, h4, h5 {
 img {
   max-width: 100%; }
 
-.slide-photo-nav .slick-list {
-  padding: 0 20% 0 0 !important; }
-
 .title-common {
   text-align: center;
   margin-bottom: 25px; }
@@ -4999,9 +4996,58 @@ img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
+  .photos-content .slide-photo-nav {
+    position: relative;
+    width: 750px;
+    margin: auto;
+    overflow: hidden; }
+    .photos-content .slide-photo-nav .slick-list {
+      height: 100px;
+      margin: 0 -6px; }
+      .photos-content .slide-photo-nav .slick-list .slick-track {
+        height: 100%; }
+        .photos-content .slide-photo-nav .slick-list .slick-track .slide-item {
+          cursor: pointer;
+          outline: none;
+          margin: 0 6px; }
+          .photos-content .slide-photo-nav .slick-list .slick-track .slide-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+    .photos-content .slide-photo-nav .slick-arrow {
+      position: absolute;
+      top: 0;
+      z-index: 4;
+      width: 38px;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.48);
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      .photos-content .slide-photo-nav .slick-arrow.prev {
+        left: 0px; }
+      .photos-content .slide-photo-nav .slick-arrow.next {
+        right: 0px; }
+
+@media only screen and (max-width: 992px) {
+  .photos {
+    padding: 60px 0px; }
+    .photos-content .slide-photo-nav {
+      width: 100%; }
+      .photos-content .slide-photo-nav .slick-list {
+        height: 120px; } }
+
+@media only screen and (max-width: 768px) {
+  .photos-content .slide-photo-for .slick-list {
+    width: 100%; } }
+
+@media only screen and (max-width: 576px) {
+  .photos-content .slide-photo-for .slick-list {
+    width: 100%;
+    height: auto; }
   .photos-content .slide-photo-nav .slick-list {
-    margin-left: 0px; }
-    .photos-content .slide-photo-nav .slick-list .slick-track .slide-item {
-      cursor: pointer;
-      outline: none;
-      margin-left: 11px; }
+    height: 110px; } }
