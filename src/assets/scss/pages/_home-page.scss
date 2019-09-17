@@ -817,6 +817,7 @@
     }
   }
 }
+
 @media #{$info-ipad} {
   .photos {
     &-content {
@@ -829,6 +830,7 @@
     }
   }
 }
+
 @media #{$info-phone-normal} {
   .photos {
     &-content {
@@ -850,4 +852,259 @@
 }
 
 
+
 //-----------------------------------------------------NEXT
+
+
+
+//----------News----------
+.news {
+  position: relative;
+  //New big
+  &-big {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(top, transparent 10%, rgba(0, 0, 0, 0.85));
+      background: -moz-linear-gradient(top, transparent 10%, rgba(0, 0, 0, 0.85));
+      background: -webkit-linear-gradient(top, transparent 10%, rgba(0, 0, 0, 0.85));
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 640px;
+    }
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      @include flex;
+      align-items: center;
+      justify-content: center;
+      &-content {
+        width: 550px;
+        text-align: right;
+        margin: 90px 0px 0px 250px;
+        a {
+          display: inline-block;
+          font-size: 36px;
+          font-weight: 800;
+          color: #f2792a;
+          margin-bottom: 12px;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 800;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  //overlay absolute new slide
+  .slide-overlay {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    @include transform(translate(-50%, 50%));
+  }
+  //New slide
+  &-slide {
+    //remove margin bottom
+    &.slick-dotted.slick-slider {
+      margin-bottom: 0px;
+    }
+    //list slide
+    .slick-list {
+      margin: 0 -9px;
+      height: 230px;
+      .slick-track {
+        height: 100%;
+        .slide-item {
+          position: relative;
+          margin: 0 9px;
+          height: 100%;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            @include flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            h4 {
+              font-size: 24px;
+              font-weight: 800;
+              color: #f2792a;
+              padding: 18px;
+            }
+          }
+        }
+      }
+    }
+    //custom dots
+    .slick-dots {
+      @include flex;
+      justify-content: center;
+      align-items: center;
+      bottom: -41px;
+      li {
+        padding: 0px;
+        margin: 0px 10px;
+        background: #7f7f7f;
+        width: 11px;
+        height: 11px;
+        @include border-radius(50%);
+        &.slick-active {
+          background: #f2792a;
+        }
+        button {
+          width: unset;
+          height: unset;
+          &:before {
+            content: none;
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+.news-title-special {
+  .title-common {
+    margin: 200px 0px 60px;
+  }
+}
+//----------Responsive News----------
+@media #{$info-ipad-pro} {
+  .news {
+    //New big
+    &-big {
+      img {
+        height: 520px;
+      }
+      .overlay {
+        &-content {
+          width: 550px;
+          margin: 0px 0px 0px 140px;
+          a {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    //New slide
+    &-slide {
+      //list slide
+      .slick-list {
+        height: 230px;
+        .slick-track {
+          .slide-item {
+            .title {
+              h4 {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$info-ipad} {
+  .news {
+    //New big
+    &-big {
+      img {
+        height: 480px;
+      }
+      .overlay {
+        &-content {
+          width: 550px;
+          margin: 0px 0px 0px 0px;
+          a {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    //New slide
+    &-slide {
+      //list slide
+      .slick-list {
+        height: 180px;
+      }
+    }
+  }
+  .news-title-special {
+    .title-common {
+      margin: 170px 0px 60px;
+    }
+  }
+}
+
+@media #{$info-phone-normal} {
+  .news {
+    //New big
+    &-big {
+      img {
+        height: 520px;
+      }
+      .overlay {
+        &-content {
+          width: 100%;
+          margin: 0px 0px 0px 0px;
+          padding: 0px 15px;
+          a {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    //New slide
+    &-slide {
+      //list slide
+      .slick-list {
+        height: 130px;
+        .slick-track {
+          .slide-item {
+            .title {
+              h4 {
+                font-size: 16px;
+                padding: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .news-title-special {
+    .title-common {
+      margin: 140px 0px 50px;
+    }
+  }
+}

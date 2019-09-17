@@ -230,6 +230,7 @@ function () {
 
     this.slidePhotoFor = $('.slide-photo-for');
     this.slidePhotoNav = $('.slide-photo-nav');
+    this.slideNews = $('.news-slide');
     this.bindEvents();
   }
   /* ===================================
@@ -242,6 +243,7 @@ function () {
     value: function bindEvents() {
       console.log('page home');
       this.SlickPhoto();
+      this.SlickNews();
     }
     /* ===================================
      *  METHODS
@@ -279,6 +281,24 @@ function () {
           }
         }, {
           breakpoint: 576,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }]
+      });
+    }
+  }, {
+    key: "SlickNews",
+    value: function SlickNews() {
+      this.slideNews.slick({
+        infinite: true,
+        arrows: false,
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 992,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1
