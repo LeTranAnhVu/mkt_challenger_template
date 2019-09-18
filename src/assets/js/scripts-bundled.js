@@ -242,6 +242,7 @@ function () {
     key: "bindEvents",
     value: function bindEvents() {
       console.log('page home');
+      new WOW().init();
       this.SlickPhoto();
       this.SlickNews();
     }

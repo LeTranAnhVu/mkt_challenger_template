@@ -1,0 +1,91 @@
+//Animation section banner home
+@include keyframes(animate-mouse-dot-scroll) {
+  0% {
+    opacity: 1;
+    @include transform(translateY(0));
+  }
+  100% {
+    opacity: 0.4;
+    @include transform(translateY(10px));
+  }
+}
+@include keyframes(animate-mouse-scroll) {
+  0% {
+    @include transform(translateY(0));
+  }
+  50% {
+    @include transform(translateY(8px));
+  }
+  100% {
+    @include transform(translateY(0));
+  }
+}
+//Animation section banner about
+@include keyframes(animate-boating) {
+  0% {
+    @include transform(translateY(0) rotate(0deg));
+  }
+  25% {
+    @include transform(translateY(10px) rotate(2deg));
+  }
+  50% {
+    @include transform(translateY(10px) rotate(-2deg));
+  }
+  75% {
+    @include transform(translateY(0) rotate(-2deg));
+  }
+  100% {
+    @include transform(translateY(0px) rotate(0deg));
+  }
+}
+//Animation svg loading
+@include keyframes(animate-path-line) {
+  0%{
+    stroke: #FFFFFF;
+  }
+  30% {
+    stroke: #ffbe00;
+  }
+  70% {
+    stroke: #FFFFFF;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #f24316;
+  }
+}
+@include keyframes(animate-fill-svg) {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #ffbe00;
+  }
+}
+@include keyframes(animate-hidden-svg) {
+  0% {
+    @include transform(scale(1));
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    @include transform(scale(1.1));
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    @include transform(scale(1.2));
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@include keyframes(animate-hidden-loading) {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

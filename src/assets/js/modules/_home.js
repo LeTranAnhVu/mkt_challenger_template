@@ -16,6 +16,7 @@ export default class Home {
    * =================================== */
   bindEvents(){
     console.log('page home')
+    new WOW().init();
     this.SlickPhoto();
     this.SlickNews();
   }

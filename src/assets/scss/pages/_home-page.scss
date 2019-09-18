@@ -1,3 +1,6 @@
+#home-page {
+  overflow: hidden;
+}
 //----------Banner Home----------
 .banner-home {
   position: relative;
@@ -5,7 +8,7 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 562px;
+  height: 680px;
   @include flex;
   justify-content: center;
   align-items: flex-end;
@@ -78,15 +81,42 @@
   //Scroll down
   .scroll-down {
     position: absolute;
+    width: 20px;
+    height: 32px;
+    background: transparent;
+    border: 2px solid #f2792a;
+    @include border-radius(10px);
     z-index: 3;
     bottom: 0;
     left: 50%;
     margin-left: -10px;
     cursor: pointer;
+    box-shadow: 0px 0px 5px -2px #000000;
+    @include animation(animate-mouse-scroll 2s linear infinite);
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 5px;
+      margin-left: -1px;
+      width: 2px;
+      height: 5px;
+      background: #f2792a;
+      @include animation(animate-mouse-dot-scroll 1s forwards infinite);
+    }
   }
 }
 
 //---Reponsive Banner Home-----
+@media #{$info-laptop-normal} {
+  .banner-home {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 562px;
+  }
+}
+
 @media #{$info-ipad-pro} {
   .banner-home {
     //Scroll down
@@ -134,9 +164,9 @@
   position: relative;
   background: url("../images/banner-about.png") no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top;
   width: 100%;
-  margin-top: -100px;
+  margin-top: -140px;
   .about {
     @include flex;
     padding: 160px 0px 30px;
@@ -144,6 +174,7 @@
     &-image {
       width: 40%;
       text-align: center;
+      @include animation(animate-boating 4s linear infinite);
     }
     //Content
     &-content {
@@ -169,6 +200,14 @@
 }
 
 //----------Responsive Banner About----------
+@media #{$info-laptop-normal} {
+  .banner-about {
+    background-size: cover;
+    background-position: center center;
+    margin-top: -100px;
+  }
+}
+
 @media #{$info-ipad-pro} {
   .banner-about {
     background: url("../images/banner-photo.jpg") no-repeat;
@@ -235,15 +274,15 @@
 
 
 //----------Banner Contest----------
-.banner-contest {
+.banner-contest   {
   position: relative;
   background: url("../images/banner-contest.png") no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top;
   width: 100%;
-  //height: 782px;
-  padding-top: 140px;
-  margin-top:-150px;
+  padding-top: 180px;
+  padding-bottom: 30px;
+  margin-top:-190px;
   //Timeline
   ul {
     position: relative;
@@ -281,15 +320,20 @@
         @include border-radius(50%);
         top: 50%;
         margin-top: -8.5px;
+        z-index: 2;
       }
       &:after {content: '';
         position: absolute;
         width: 31px;
         height: 31px;
         border: 2px solid #f2792a;
+        background: transparent;
         @include border-radius(50%);
+        @include transition(all 0.3s);
         top: 50%;
-        margin-top: -15.5px;}
+        margin-top: -15.5px;
+        z-index: 1;
+      }
       .item {
         background-color: rgba(0, 0, 0, .25);
         padding: 8px 11px 24px 11px;
@@ -305,6 +349,11 @@
           font-size: 11px;
           font-weight: 600;
           color: #ffffff;
+        }
+      }
+      &:hover {
+        &::after {
+          background: #f2792a;
         }
       }
       //Timeline 1 3 5
@@ -422,6 +471,16 @@
 }
 
 //----------Responsive Banner Contest----------
+@media #{$info-laptop-normal} {
+  .banner-contest {
+    background-size: cover;
+    background-position: center center;
+    padding-top: 140px;
+    padding-bottom: 0px;
+    margin-top:-150px;
+  }
+}
+
 @media #{$info-ipad-pro} {
   .banner-contest {
     background: url("../images/banner-contest-mobile.jpg") no-repeat;
@@ -770,9 +829,28 @@
         .slick-track {
           height: 100%;
           .slide-item {
+            position: relative;
             cursor: pointer;
             outline: none;
             margin: 0 6px;
+            &:hover {
+              &:before {
+                opacity: 1;
+              }
+            }
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(90deg, #f2792a -10%, transparent 60%);
+              background: -moz-linear-gradient(90deg, #f2792a -10%, transparent 60%);
+              background: -webkit-linear-gradient(90deg, #f2792a -10%, transparent 60%);
+              opacity: 0;
+              @include transition(all 0.3s);
+            }
             img {
               width: 100%;
               height: 100%;
@@ -938,6 +1016,17 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.6);
+            @include transition(all 0.3s);
+          }
+          &:hover {
+            &:before {
+              background-color: transparent;
+            }
+            .title {
+              h4 {
+                @include transform(translateY(-6px));
+              }
+            }
           }
           img {
             width: 100%;
@@ -958,6 +1047,7 @@
               font-weight: 800;
               color: #f2792a;
               padding: 18px;
+              @include transition(0.3s);
             }
           }
         }

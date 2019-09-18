@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
     <!--bootstrap-->
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!--animate css-->
+    <link rel="stylesheet" href="assets/css/vendor/animate.css">
     <!--slick slider-->
     <link rel="stylesheet" href="assets/css/vendor/slick.css">
     <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
@@ -26,6 +28,57 @@
 
 </head>
 <body>
+<!---------LOADING-------->
+<section class="loading-page">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         x="0px" y="0px" viewBox="0 0 630.3 142.9" style="enable-background:new 0 0 630.3 142.9;"
+         xml:space="preserve">
+            <symbol id="New_Symbol" viewBox="-314.5 -71 629 142">
+                <g>
+                    <path class="st0"
+                          d="M-283.9,11.4v57.2h24.6l10.3-11.9l10.4,11.9h24.6V11.4h-25.3v28.6L-249,29l-9.6,11.1V11.4H-283.9z" />
+                    <path class="st0" d="M-183.2,11.4h-25.3l19.9,57.2h36.1l19.9-57.2H-158l-3.3,9.7h-18.6L-183.2,11.4z M-175.3,34.6h9.4l-4.7,14.2
+			L-175.3,34.6z" />
+                    <path class="st0" d="M-127,68.6h37.4c6.5,0,11.6-1.6,15.3-4.9c3.7-3.3,5.5-7.3,5.5-12.2c0-5.4-2.2-9.6-6.5-12.7
+			c6.2-7,9.9-16.2,11.1-27.4h-26.3c-0.5,7.2-1.6,12.6-3.2,16c-1.7,3.4-4.3,5.2-7.9,5.2V11.4H-127V68.6z M-101.7,56.8v-11h0.7
+			c4.5,0,6.8,1.8,6.8,5.4c0,1.5-0.5,2.8-1.4,4c-0.9,1.1-2.5,1.7-4.6,1.7H-101.7z" />
+                    <path class="st0" d="M-32.7,68.6V49.5c4.3,0.3,7.6,2.2,9.9,5.5c2.2,3.3,3.4,7.9,3.4,13.6H6.3c0-7-0.9-12.7-2.7-17.2
+			C1.7,46.9-1.1,43.1-5,40.1C2.8,34.2,7.1,24.6,7.9,11.4h-27.3c-0.6,13.6-5.1,20.6-13.3,20.9V11.4H-58v57.2H-32.7z" />
+                    <path class="st0" d="M62.1,25.8V11.4H14.6v57.2h47.5V54.3H39.9v-7.1h15.4V32.8H39.9v-7H62.1z" />
+                    <path class="st0" d="M65.6,43.3v25.3h50.8V43.3h-12.7V11.4H78.3v31.9H65.6z" />
+                    <path class="st0" d="M123.6,11.4v57.2h25.3V11.4H123.6z" />
+                    <path class="st0" d="M217,11h-19.2l-12.3,18V11.4h-25.3v57.2h18.1l13.3-19.3v19.3H217V11z" />
+                    <path class="st0" d="M285.9,61.9l-12.2-17.2c-5.1,2.4-9.8,3.7-14.1,3.7c-2.9,0-5.2-0.7-6.9-2.2c-1.7-1.5-2.6-3.5-2.6-5.9
+			c0-4.6,3-7,9.1-7v9h25.3V11.3c-10.2-0.6-17.2-0.9-20.8-0.9c-14,0-23.7,3-29.2,8.9c-5.4,5.9-8.2,12.9-8.2,20.8
+			c0,5.4,1.3,10.4,3.8,15c2.5,4.5,6.2,8.1,11,10.6c4.8,2.5,10.5,3.7,17,3.7c4.6,0,9.4-0.7,14.3-2C277.4,66.2,281.9,64.3,285.9,61.9z
+			" />
+                    <path class="st0" d="M-258.1-16.5l-10.6-20.2c-3.1,1.1-6.5,1.6-10.3,1.6c-5.4,0-8.1-1.5-8.1-4.4c0-1.4,0.7-2.5,2.2-3.3
+			c1.5-0.8,3.6-1.2,6.4-1.2c3.7,0,7,0.7,9.7,2l10.6-21.7c-3-1.8-6.6-3.2-10.9-4.3c-4.2-1.1-8.3-1.6-12.2-1.6
+			c-9.7,0-17.5,2.8-23.2,8.4c-5.8,5.6-8.6,12.5-8.6,20.7c0,8.7,3,15.8,9,21.5c6,5.6,13.6,8.5,22.9,8.5c4,0,8.1-0.5,12.4-1.6
+			C-264.5-13.2-260.9-14.7-258.1-16.5z" />
+                    <path class="st0" d="M-226.3-68.6h-25.3v57.2h25.3v-21h12.9v21h25.3v-57.2h-25.3v21.3h-12.9V-68.6z" />
+                    <path class="st0" d="M-157.2-68.6h-25.3l19.9,57.2h36.1l19.9-57.2H-132l-3.3,9.7h-18.6L-157.2-68.6z M-149.3-45.4h9.4l-4.7,14.2
+			L-149.3-45.4z" />
+                    <path class="st0" d="M-101.1-68.6v57.2h25.3v-42.8h22.2v-14.4H-101.1z" />
+                    <path class="st0" d="M-47.5-68.6v57.2h25.3v-42.8H0v-14.4H-47.5z" />
+                    <path class="st0" d="M53.7-54.2v-14.4H6.2v57.2h47.5v-14.4H31.5v-7.1H47v-14.4H31.5v-7H53.7z" />
+                    <path class="st0" d="M118.2-69H99L86.7-51v-17.6H61.4v57.2h18.1l13.3-19.3v19.3h25.3V-69z" />
+                    <path class="st0" d="M187.2-18.1l-12.2-17.2c-5.1,2.4-9.8,3.7-14.1,3.7c-2.9,0-5.2-0.7-6.9-2.2c-1.7-1.5-2.6-3.5-2.6-5.9
+			c0-4.6,3-7,9.1-7v9h25.3v-30.8c-10.2-0.6-17.2-0.9-20.8-0.9c-14,0-23.7,3-29.2,8.9c-5.4,5.9-8.2,12.9-8.2,20.8
+			c0,5.4,1.3,10.4,3.8,15c2.5,4.5,6.2,8.1,11,10.6c4.8,2.5,10.5,3.7,17,3.7c4.6,0,9.4-0.7,14.3-2C178.6-13.8,183.1-15.7,187.2-18.1z
+			" />
+                    <path class="st0"
+                          d="M242.4-54.2v-14.4h-47.5v57.2h47.5v-14.4h-22.2v-7.1h15.4v-14.4h-15.4v-7H242.4z" />
+                    <path class="st0" d="M250.1-11.4h37.4c6.5,0,11.6-1.6,15.3-4.9c3.7-3.3,5.5-7.3,5.5-12.2c0-5.4-2.2-9.6-6.5-12.7
+			c6.2-7,9.9-16.2,11.1-27.4h-26.3c-0.5,7.2-1.6,12.6-3.2,16c-1.7,3.4-4.3,5.2-7.9,5.2v-21.2h-25.3V-11.4z M275.4-23.2v-11h0.7
+			c4.5,0,6.8,1.8,6.8,5.4c0,1.5-0.5,2.8-1.4,4c-0.9,1.1-2.5,1.7-4.6,1.7H275.4z" />
+                </g>
+            </symbol>
+        <use xlink:href="#New_Symbol" width="629" height="142" x="-314.5" y="-71"
+             transform="matrix(1 0 0 -1 315.4075 71.7009)" style="overflow:visible;" />
+        </svg>
+
+</section>
 
 
 <!---------HEADER-------->
@@ -78,12 +131,10 @@
 
     <!--Banner home header-->
     <section id="banner-home" class="banner-home">
-        <a href="#" class="btn-apply">
+        <a href="#" class="btn-apply wow fadeInDown">
             <p>Apply Now</p>
         </a>
-        <div class="scroll-down">
-            <img src="./assets/images/icon-mouse.png" alt="mouse">
-        </div>
+        <div class="scroll-down"></div>
     </section>
 
     <!--Banner about us-->
@@ -96,18 +147,18 @@
                 </div>
                 <!--About us content-->
                 <div class="about-content">
-                    <div class="title-common">
+                    <div class="title-common wow fadeInDown">
                         <h3>About Us</h3>
                     </div>
-                    <div class="item">
+                    <div class="item wow fadeInRight" data-wow-offset="50">
                         <h4>Introduction</h4>
                         <p>Marketing Challengers is a nationwide marketing competition organized by Business Club of RMIT University Vietnam (SGS).</p>
                     </div>
-                    <div class="item">
+                    <div class="item wow fadeInRight" data-wow-offset="50">
                         <h4>Vision</h4>
                         <p>To become the best student-run marketing competition for students.</p>
                     </div>
-                    <div class="item">
+                    <div class="item wow fadeInRight" data-wow-offset="50">
                         <h4>Mission</h4>
                         <p>To provide students, regardless of their marketing foundation, a practical playground to develop an Integrated Marketing Communication (IMC) Plan and an opportunity to pitch their ideas to real famous client brands.</p>
                     </div>
@@ -120,35 +171,35 @@
     <section id="banner-contest" class="banner-contest">
         <div class="banner-contest-content">
             <!--Title-->
-            <div class="title-common">
+            <div class="title-common wow fadeInDown">
                 <h3>Contest</h3>
             </div>
             <!--Timeline-->
             <ul class="timeline">
                 <li>
-                    <a href="#">
+                    <a href="#" class="wow fadeInLeft" data-wow-delay="0.5s" data-wow-offset="50">
                         <img src="./assets/images/round-01-2.png" alt="round">
                     </a>
-                    <div class="item">
+                    <div class="item wow fadeInLeft" data-wow-offset="50">
                         <h4>Debrief (20/10 - 3/11)</h4>
                         <p>Opening ceremony: (27/10)</p>
                         <p>Workshop 1: Market research + Creative brief (26/10)</p>
                     </div>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="wow fadeInRight" data-wow-delay="0.5s" data-wow-offset="50">
                         <img src="./assets/images/round-02.png" alt="round">
                     </a>
-                    <div class="item">
+                    <div class="item wow fadeInRight" data-wow-offset="50">
                         <h4>IMC Plan (3/11 - 17/11)</h4>
                         <p>Workshop 2: IMC plan + Setting KPI and budget (10/11)</p>
                     </div>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="wow fadeInLeft" data-wow-delay="0.5s" data-wow-offset="50">
                         <img src="./assets/images/round-03.png" alt="round">
                     </a>
-                    <div class="item">
+                    <div class="item wow fadeInLeft" data-wow-offset="50">
                         <h4>Creative production
                             pitching (17/11 - 1/12)</h4>
                         <p>Workshop 3 (24/11): Creative project training</p>
@@ -161,7 +212,7 @@
                 <div class="clear"></div>
             </ul>
             <div class="apply-contest">
-                <a href="#" class="btn-apply">
+                <a href="#" class="btn-apply wow fadeInDown">
                     <p>Apply Now</p>
                 </a>
             </div>
@@ -174,11 +225,11 @@
         <div class="sponsors-button">
             <div class="sponsors-button-content">
                 <!--Title-->
-                <div class="title-common">
+                <div class="title-common wow fadeInDown">
                     <h3>Sponsors</h3>
                 </div>
                 <!--button filter season-->
-                <ul class="list-button">
+                <ul class="list-button wow fadeInLeft">
                     <li>
                         <a href="#" class="btn-section">
                             <p>Season 1</p>
@@ -243,7 +294,7 @@
         <div class="container">
             <div class="photos-content">
                 <!--Title-->
-                <div class="title-common">
+                <div class="title-common wow fadeInDown">
                     <h3>Photos</h3>
                 </div>
                 <!--Slide for-->
@@ -399,7 +450,7 @@
     <!--News title special-->
     <section class="news-title-special">
         <div class="container">
-            <div class="title-common">
+            <div class="title-common wow fadeInDown">
                 <h3>News</h3>
             </div>
         </div>
@@ -410,7 +461,20 @@
 
 <!---------FOOTER-------->
 <footer id="footer" class="footer">
-    Footer
+    <div class="container">
+        <div class="footer-content">
+            <div class="info">
+                <img src="./assets/images/logo.png" alt="logofooter">
+                <a href="mailto:MarketingChallengers@gmail.com?subject=subject&cc=cc@example.com">MarketingChallengers@gmail.com</a>
+                <a href="#">Phone: (+84) 913735117</a>
+            </div>
+            <div class="social">
+                <a href="https://www.youtube.com/channel/UCbY6iD4DWtTxvvLyMFD4sLQ" target="_blank"><img src="./assets/images/icon-youtube.png" alt="youtube"></a>
+                <a href="https://www.facebook.com/marketing.challengers/" target="_blank"><img src="./assets/images/icon-facebook.png" alt="facebook"></a>
+                <a href="mailto:MarketingChallengers@gmail.com?subject=subject&cc=cc@example.com"><img src="./assets/images/icon-gmail.png" alt="gmail"></a>
+            </div>
+        </div>
+    </div>
 </footer>
 
 
@@ -423,6 +487,7 @@
 <script src="./assets/js/vendor/jquery-3.4.1.min.js"></script>
 <script src="./assets/js/vendor/bootstrap.min.js"></script>
 <script src="./assets/js/vendor/slick.min.js"></script>
+<script src="./assets/js/vendor/wow.min.js"></script>
 <!-- Main Script -->
 <script src="./assets/js/scripts-bundled.js"></script>
 

@@ -1,4 +1,92 @@
 .footer {
   background-color: #2a354c;
-  color: #ffffff;
+  &-content {
+    @include flex;
+    align-items: center;
+    .info {
+      width: 70%;
+      @include flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 50px;
+      img {
+        width: 100px;
+        margin: 6px 0px;
+      }
+      a {
+        font-size: 14px;
+        font-weight: 800;
+        color: #ffffff;
+      }
+    }
+    .social {
+      width: 30%;
+      @include flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 140px;
+    }
+  }
+}
+//----------Responsive Footer----------
+@media #{$info-ipad-pro} {
+  .footer {
+    &-content {
+      flex-direction: column;
+      .info {
+        width: 100%;
+        padding-right: 0px;
+        img {
+          width: 100px;
+          margin: 6px 0px;
+        }
+        a {
+          font-size: 14px;
+          font-weight: 800;
+          color: #ffffff;
+        }
+      }
+      .social {
+        display: inline-block;
+        width: 300px;
+        margin: auto;
+        padding-left: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+        a {
+          margin: 0px 5px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$info-ipad} {
+  .footer {
+    &-content {
+      .info {
+        flex-direction: column;
+        img {
+          margin-bottom: 15px;
+        }
+        a {
+          font-size: 14px;
+          font-weight: 800;
+          color: #ffffff;
+          margin-bottom: 10px;
+        }
+      }
+      .social {
+        display: inline-block;
+        width: 300px;
+        margin: auto;
+        padding-left: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+        a {
+          margin: 0px 5px;
+        }
+      }
+    }
+  }
 }
