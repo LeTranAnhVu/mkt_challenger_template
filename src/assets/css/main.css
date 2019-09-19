@@ -4944,6 +4944,9 @@ img {
       font-size: 24px; } }
 
 #header {
+  position: fixed;
+  z-index: 90;
+  width: 100%;
   background: #2a354c; }
   #header .navbar {
     padding: 0; }
@@ -4997,6 +5000,8 @@ img {
         transition: all 0.3s; }
         #header .navbar-collapse ul li a:hover {
           color: #f2792a; }
+      #header .navbar-collapse ul li.active a {
+        color: #f2792a; }
 
 @media screen and (width: 992px) {
   #header .navbar-collapse ul li {
@@ -5958,8 +5963,18 @@ img {
           .sponsors-button ul li a.active p {
             color: #ffffff; }
   .sponsors-logo {
+    position: relative;
     width: 50%;
     background-color: #ffffff; }
+    .sponsors-logo .logo-season {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0; }
+      .sponsors-logo .logo-season.active {
+        opacity: 1; }
 
 @media only screen and (max-width: 992px) {
   .sponsors-button {

@@ -165,6 +165,10 @@ function () {
     this.btnNavbarToggleMobile = $('.navbar-toggler');
     this.navbarCollapse = $('.navbar-collapse');
     this.navbarToggleIcon = $('.navbar-toggler-icon');
+    this.headerHeight = $('#header').height();
+    this.navLink = $('.navbar .nav-prevent');
+    this.pageScroll = $('html,body');
+    this.bannerHome = $('#banner-home');
     this.bindEvents();
   }
   /* ===================================
@@ -177,6 +181,8 @@ function () {
     value: function bindEvents() {
       console.log('Common JS');
       this.AddActiveNavbarToggle();
+      this.ScrollTopBody();
+      this.bannerHome.css('marginTop', Math.round(this.headerHeight));
     }
     /* ===================================
      *  METHODS
@@ -191,6 +197,48 @@ function () {
           self.navbarToggleIcon.addClass('active');
         } else if (self.navbarCollapse.hasClass('show')) {
           self.navbarToggleIcon.removeClass('active');
+        }
+      });
+    }
+  }, {
+    key: "ScrollTopBody",
+    value: function ScrollTopBody() {
+      var self = this;
+      this.navLink.on('click', function (e) {
+        //set prevent default
+        e.preventDefault(); //condition scroll
+
+        if ($(this).html() === 'Home') {
+          self.pageScroll.animate({
+            scrollTop: 0
+          }, 'slow');
+        }
+
+        if ($(this).html() === 'About') {
+          self.pageScroll.animate({
+            scrollTop: $('#banner-about').offset().top
+          }, 'slow');
+        }
+
+        if ($(this).html() === 'Contest') {
+          self.pageScroll.animate({
+            scrollTop: $('#banner-contest').offset().top
+          }, 'slow');
+        }
+
+        if ($(this).html() === 'Sponsors') {
+          self.pageScroll.animate({
+            scrollTop: $('#sponsors').offset().top - 80
+          }, 'slow');
+        }
+      });
+    }
+  }, {
+    key: "ResetClassActiveNavLink",
+    value: function ResetClassActiveNavLink() {
+      this.navLink.each(function (index, value) {
+        if ($(value).parent().hasClass('active')) {
+          $(value).parent().removeClass('active');
         }
       });
     }
@@ -231,6 +279,18 @@ function () {
     this.slidePhotoFor = $('.slide-photo-for');
     this.slidePhotoNav = $('.slide-photo-nav');
     this.slideNews = $('.news-slide');
+    this.listButtonSeason = $('.btn-season');
+    this.listLogoSeason = $('.logo-season');
+    this.navItem = $('.navbar .nav-item');
+    this.navItem01 = $('.navbar .nav-item:nth-child(1)');
+    this.navItem02 = $('.navbar .nav-item:nth-child(2)');
+    this.navItem03 = $('.navbar .nav-item:nth-child(3)');
+    this.navItem04 = $('.navbar .nav-item:nth-child(4)');
+    this.navItem05 = $('.navbar .nav-item:nth-child(5)');
+    this.bannerAbout = $('#banner-about');
+    this.bannerContest = $('#banner-contest');
+    this.sponsors = $('#sponsors');
+    this.news = $('#news');
     this.bindEvents();
   }
   /* ===================================
@@ -245,6 +305,9 @@ function () {
       new WOW().init();
       this.SlickPhoto();
       this.SlickNews();
+      this.AddActiveButtonSeason();
+      this.ActiveRefresh();
+      this.ScrollSpyActive();
     }
     /* ===================================
      *  METHODS
@@ -305,6 +368,111 @@ function () {
             slidesToScroll: 1
           }
         }]
+      });
+    }
+  }, {
+    key: "AddActiveButtonSeason",
+    value: function AddActiveButtonSeason() {
+      var self = this;
+      this.listButtonSeason.on('click', function (e) {
+        e.preventDefault();
+        self.ResetClassActiveSeason(self.listButtonSeason);
+        $(this).addClass('active');
+        var currentAttr = $(this).attr('data-season');
+        self.ShowLogoSeason(currentAttr);
+      });
+    }
+  }, {
+    key: "ShowLogoSeason",
+    value: function ShowLogoSeason(currentAttr) {
+      var self = this;
+
+      for (var i = 0; i < this.listLogoSeason.length; i++) {
+        if ($(this.listLogoSeason[i]).attr('data-logo-season') === currentAttr) {
+          self.ResetClassActiveSeason(self.listLogoSeason);
+          $(this.listLogoSeason[i]).addClass('active');
+        }
+      }
+    }
+  }, {
+    key: "ResetClassActiveSeason",
+    value: function ResetClassActiveSeason(elementLoop) {
+      elementLoop.each(function (index, value) {
+        if ($(value).hasClass('active')) {
+          $(value).removeClass('active');
+        }
+      });
+    }
+  }, {
+    key: "ActiveRefresh",
+    value: function ActiveRefresh() {
+      var currentOffset = $(window).scrollTop();
+
+      if (currentOffset >= 0) {
+        this.ResetClassActiveNavItem();
+        this.navItem01.addClass('active');
+      }
+
+      if (currentOffset >= this.bannerAbout.offset().top - 50) {
+        this.ResetClassActiveNavItem();
+        this.navItem02.addClass('active');
+      }
+
+      if (currentOffset >= this.bannerContest.offset().top - 50) {
+        this.ResetClassActiveNavItem();
+        this.navItem03.addClass('active');
+      }
+
+      if (currentOffset >= this.sponsors.offset().top - 100) {
+        this.ResetClassActiveNavItem();
+        this.navItem04.addClass('active');
+      }
+
+      if (currentOffset >= this.news.offset().top - 50) {
+        this.ResetClassActiveNavItem();
+        this.navItem05.addClass('active');
+      }
+    }
+  }, {
+    key: "ScrollSpyActive",
+    value: function ScrollSpyActive() {
+      var self = this;
+      $(window).on('scroll', function () {
+        var currentOffset = $(window).scrollTop();
+
+        if (currentOffset >= 0) {
+          self.ResetClassActiveNavItem();
+          self.navItem01.addClass('active');
+        }
+
+        if (currentOffset >= self.bannerAbout.offset().top - 50) {
+          self.ResetClassActiveNavItem();
+          self.navItem02.addClass('active');
+        }
+
+        if (currentOffset >= self.bannerContest.offset().top - 50) {
+          self.ResetClassActiveNavItem();
+          self.navItem03.addClass('active');
+        }
+
+        if (currentOffset >= self.sponsors.offset().top - 100) {
+          self.ResetClassActiveNavItem();
+          self.navItem04.addClass('active');
+        }
+
+        if (currentOffset >= self.news.offset().top - 50) {
+          self.ResetClassActiveNavItem();
+          self.navItem05.addClass('active');
+        }
+      });
+    }
+  }, {
+    key: "ResetClassActiveNavItem",
+    value: function ResetClassActiveNavItem() {
+      this.navItem.each(function (index, value) {
+        if ($(value).hasClass('active')) {
+          $(value).removeClass('active');
+        }
       });
     }
   }]);

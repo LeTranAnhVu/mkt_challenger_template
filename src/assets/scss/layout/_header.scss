@@ -1,4 +1,7 @@
 #header {
+  position: fixed;
+  z-index: 90;
+  width: 100%;
   background: #2a354c;
   .navbar {
     padding: 0;
@@ -59,6 +62,11 @@
             color: #ffffff;
             @include transition(all 0.3s);
             &:hover {
+              color: #f2792a;
+            }
+          }
+          &.active {
+            a {
               color: #f2792a;
             }
           }
