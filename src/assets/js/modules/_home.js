@@ -11,12 +11,18 @@ export default class Home {
     this.listButtonSeason = $('.btn-season');
     this.listLogoSeason = $('.logo-season');
 
+    this.loadingPage = $('.loading-page');
+
     this.navItem = $('.navbar .nav-item');
     this.navItem01 = $('.navbar .nav-item:nth-child(1)');
     this.navItem02 = $('.navbar .nav-item:nth-child(2)');
     this.navItem03 = $('.navbar .nav-item:nth-child(3)');
     this.navItem04 = $('.navbar .nav-item:nth-child(4)');
     this.navItem05 = $('.navbar .nav-item:nth-child(5)');
+
+    this.navLink = $('.navbar .nav-prevent');
+    this.pageScroll = $('html,body');
+    this.scrollDown =  $('.scroll-down');
 
     this.bannerAbout = $('#banner-about');
     this.bannerContest = $('#banner-contest');
@@ -38,6 +44,9 @@ export default class Home {
     this.AddActiveButtonSeason();
     this.ActiveRefresh();
     this.ScrollSpyActive();
+    this.ScrollTopBody();
+    this.ScrollDown();
+    this.HiddenLoadingInMobile();
   }
 
 
@@ -126,13 +135,6 @@ export default class Home {
     }
   }
 
-  ResetClassActiveSeason (elementLoop) {
-    elementLoop.each(function (index, value) {
-      if($(value).hasClass('active')) {
-        $(value).removeClass('active')
-      }
-    })
-  }
 
   ActiveRefresh () {
     let currentOffset = $(window).scrollTop();
@@ -185,10 +187,71 @@ export default class Home {
     })
   }
 
+  ScrollTopBody () {
+    let self = this;
+    this.navLink.on('click', function (e) {
+      //set prevent default
+      e.preventDefault()
+      //condition scroll
+      if($(this).html() === 'Home') {
+        self.pageScroll.animate({
+          scrollTop: 0
+        }, 'slow');
+      }
+      if($(this).html() === 'About') {
+        self.pageScroll.animate({
+          scrollTop: $('#banner-about').offset().top
+        }, 'slow');
+      }
+      if($(this).html() === 'Contest') {
+        self.pageScroll.animate({
+          scrollTop: $('#banner-contest').offset().top
+        }, 'slow');
+      }
+      if($(this).html() === 'Sponsors') {
+        self.pageScroll.animate({
+          scrollTop: $('#sponsors').offset().top - 80
+        }, 'slow');
+      }
+    })
+  }
+
+  ScrollDown () {
+    let self = this;
+    this.scrollDown.on('click', function () {
+      self.pageScroll.animate({
+        scrollTop: $('#banner-about').offset().top
+      }, 'slow');
+    })
+  }
+
+  HiddenLoadingInMobile () {
+    if($(window).width() < 1280) {
+      this.loadingPage.css('display','none');
+    }
+  }
+  //RESET
+
+  ResetClassActiveSeason (elementLoop) {
+    elementLoop.each(function (index, value) {
+      if($(value).hasClass('active')) {
+        $(value).removeClass('active')
+      }
+    })
+  }
+
   ResetClassActiveNavItem () {
     this.navItem.each(function (index, value) {
       if($(value).hasClass('active')) {
         $(value).removeClass('active')
+      }
+    })
+  }
+
+  ResetClassActiveNavLink () {
+    this.navLink.each(function (index,value) {
+      if($(value).parent().hasClass('active')) {
+        $(value).parent().removeClass('active')
       }
     })
   }

@@ -8,8 +8,10 @@ export default class Main {
      * =================================== */
     constructor(){
         let common = new Common();
-        let home = new Home();
 
+        if($('#home-page').length > 0) {
+            let home = new Home();
+        }
         this.bindEvents();
     }
 

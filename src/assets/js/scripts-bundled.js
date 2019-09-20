@@ -112,7 +112,11 @@ function () {
     _classCallCheck(this, Main);
 
     var common = new _common.default();
-    var home = new _home.default();
+
+    if ($('#home-page').length > 0) {
+      var home = new _home.default();
+    }
+
     this.bindEvents();
   }
   /* ===================================
@@ -166,8 +170,6 @@ function () {
     this.navbarCollapse = $('.navbar-collapse');
     this.navbarToggleIcon = $('.navbar-toggler-icon');
     this.headerHeight = $('#header').height();
-    this.navLink = $('.navbar .nav-prevent');
-    this.pageScroll = $('html,body');
     this.bannerHome = $('#banner-home');
     this.bindEvents();
   }
@@ -181,7 +183,6 @@ function () {
     value: function bindEvents() {
       console.log('Common JS');
       this.AddActiveNavbarToggle();
-      this.ScrollTopBody();
       this.bannerHome.css('marginTop', Math.round(this.headerHeight));
     }
     /* ===================================
@@ -197,48 +198,6 @@ function () {
           self.navbarToggleIcon.addClass('active');
         } else if (self.navbarCollapse.hasClass('show')) {
           self.navbarToggleIcon.removeClass('active');
-        }
-      });
-    }
-  }, {
-    key: "ScrollTopBody",
-    value: function ScrollTopBody() {
-      var self = this;
-      this.navLink.on('click', function (e) {
-        //set prevent default
-        e.preventDefault(); //condition scroll
-
-        if ($(this).html() === 'Home') {
-          self.pageScroll.animate({
-            scrollTop: 0
-          }, 'slow');
-        }
-
-        if ($(this).html() === 'About') {
-          self.pageScroll.animate({
-            scrollTop: $('#banner-about').offset().top
-          }, 'slow');
-        }
-
-        if ($(this).html() === 'Contest') {
-          self.pageScroll.animate({
-            scrollTop: $('#banner-contest').offset().top
-          }, 'slow');
-        }
-
-        if ($(this).html() === 'Sponsors') {
-          self.pageScroll.animate({
-            scrollTop: $('#sponsors').offset().top - 80
-          }, 'slow');
-        }
-      });
-    }
-  }, {
-    key: "ResetClassActiveNavLink",
-    value: function ResetClassActiveNavLink() {
-      this.navLink.each(function (index, value) {
-        if ($(value).parent().hasClass('active')) {
-          $(value).parent().removeClass('active');
         }
       });
     }
@@ -281,12 +240,16 @@ function () {
     this.slideNews = $('.news-slide');
     this.listButtonSeason = $('.btn-season');
     this.listLogoSeason = $('.logo-season');
+    this.loadingPage = $('.loading-page');
     this.navItem = $('.navbar .nav-item');
     this.navItem01 = $('.navbar .nav-item:nth-child(1)');
     this.navItem02 = $('.navbar .nav-item:nth-child(2)');
     this.navItem03 = $('.navbar .nav-item:nth-child(3)');
     this.navItem04 = $('.navbar .nav-item:nth-child(4)');
     this.navItem05 = $('.navbar .nav-item:nth-child(5)');
+    this.navLink = $('.navbar .nav-prevent');
+    this.pageScroll = $('html,body');
+    this.scrollDown = $('.scroll-down');
     this.bannerAbout = $('#banner-about');
     this.bannerContest = $('#banner-contest');
     this.sponsors = $('#sponsors');
@@ -308,6 +271,9 @@ function () {
       this.AddActiveButtonSeason();
       this.ActiveRefresh();
       this.ScrollSpyActive();
+      this.ScrollTopBody();
+      this.ScrollDown();
+      this.HiddenLoadingInMobile();
     }
     /* ===================================
      *  METHODS
@@ -395,15 +361,6 @@ function () {
       }
     }
   }, {
-    key: "ResetClassActiveSeason",
-    value: function ResetClassActiveSeason(elementLoop) {
-      elementLoop.each(function (index, value) {
-        if ($(value).hasClass('active')) {
-          $(value).removeClass('active');
-        }
-      });
-    }
-  }, {
     key: "ActiveRefresh",
     value: function ActiveRefresh() {
       var currentOffset = $(window).scrollTop();
@@ -467,11 +424,80 @@ function () {
       });
     }
   }, {
+    key: "ScrollTopBody",
+    value: function ScrollTopBody() {
+      var self = this;
+      this.navLink.on('click', function (e) {
+        //set prevent default
+        e.preventDefault(); //condition scroll
+
+        if ($(this).html() === 'Home') {
+          self.pageScroll.animate({
+            scrollTop: 0
+          }, 'slow');
+        }
+
+        if ($(this).html() === 'About') {
+          self.pageScroll.animate({
+            scrollTop: $('#banner-about').offset().top
+          }, 'slow');
+        }
+
+        if ($(this).html() === 'Contest') {
+          self.pageScroll.animate({
+            scrollTop: $('#banner-contest').offset().top
+          }, 'slow');
+        }
+
+        if ($(this).html() === 'Sponsors') {
+          self.pageScroll.animate({
+            scrollTop: $('#sponsors').offset().top - 80
+          }, 'slow');
+        }
+      });
+    }
+  }, {
+    key: "ScrollDown",
+    value: function ScrollDown() {
+      var self = this;
+      this.scrollDown.on('click', function () {
+        self.pageScroll.animate({
+          scrollTop: $('#banner-about').offset().top
+        }, 'slow');
+      });
+    }
+  }, {
+    key: "HiddenLoadingInMobile",
+    value: function HiddenLoadingInMobile() {
+      if ($(window).width() < 1280) {
+        this.loadingPage.css('display', 'none');
+      }
+    } //RESET
+
+  }, {
+    key: "ResetClassActiveSeason",
+    value: function ResetClassActiveSeason(elementLoop) {
+      elementLoop.each(function (index, value) {
+        if ($(value).hasClass('active')) {
+          $(value).removeClass('active');
+        }
+      });
+    }
+  }, {
     key: "ResetClassActiveNavItem",
     value: function ResetClassActiveNavItem() {
       this.navItem.each(function (index, value) {
         if ($(value).hasClass('active')) {
           $(value).removeClass('active');
+        }
+      });
+    }
+  }, {
+    key: "ResetClassActiveNavLink",
+    value: function ResetClassActiveNavLink() {
+      this.navLink.each(function (index, value) {
+        if ($(value).parent().hasClass('active')) {
+          $(value).parent().removeClass('active');
         }
       });
     }

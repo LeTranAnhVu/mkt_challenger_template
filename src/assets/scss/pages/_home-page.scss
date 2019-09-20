@@ -719,15 +719,188 @@
     position: relative;
     width: 50%;
     background-color: #ffffff;
+    padding: 40px 15px;
     .logo-season {
-      position: absolute;
-      width: 100%;
+      display: none;
       height: 100%;
-      top: 0;
-      left: 0;
-      opacity: 0;
       &.active {
-        opacity: 1;
+        @include flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .content {
+        h4 {
+          font-size: 18px;
+          font-weight: 800;
+          color: #2a354c;
+          margin-bottom: 15px;
+        }
+      }
+      &:nth-child(5) {
+        .item {
+          margin-bottom: 40px;
+          &:last-child {
+            margin-bottom: 0px;
+          }
+          .strategic-logo {
+            @include flex;
+            align-items: center;
+            justify-content: space-around;
+            .image {
+              width: 25%;
+            }
+          }
+          .media-logo {
+            @include flex;
+            align-items: center;
+            justify-content: space-around;
+            .image {
+              width: 20%;
+            }
+          }
+        }
+      }
+      &:nth-child(6) {
+        .item {
+          margin-bottom: 40px;
+          &:last-child {
+            margin-bottom: 0px;
+          }
+          .media-logo {
+            @include flex;
+            align-items: center;
+            justify-content: space-around;
+            .image {
+              width: 40%;
+            }
+          }
+        }
+      }
+      &:nth-child(7) {
+        .item {
+          margin-bottom: 40px;
+          &:first-child {
+            img {
+              width: 150px;
+              margin: auto;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0px;
+          }
+          .strategic-logo {
+             @include flex;
+             align-items: center;
+             justify-content: space-around;
+             width: 80%;
+             margin: auto;
+             .image {
+               width: 20%;
+             }
+           }
+          .media-logo {
+            @include flex;
+            align-items: center;
+            justify-content: space-around;
+            .image {
+              width: 20%;
+            }
+          }
+          .inkind-logo {
+            @include flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 80%;
+            margin: auto;
+            .image {
+              width: 20%;
+            }
+          }
+        }
+      }
+      &:nth-child(8) {
+        .item {
+          margin-bottom: 40px;
+          &:first-child {
+            img {
+              width: 180px;
+              margin: auto;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0px;
+          }
+          .strategic-logo {
+             @include flex;
+             align-items: center;
+             justify-content: space-around;
+             width: 80%;
+             margin: auto;
+             .image {
+               width: 25%;
+             }
+           }
+          .media-logo {
+            @include flex;
+            align-items: center;
+            justify-content: space-around;
+            .image {
+              width: 25%;
+            }
+          }
+          .inkind-logo {
+            @include flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 80%;
+            margin: auto;
+            .image {
+              width: 25%;
+            }
+          }
+        }
+      }
+      &:nth-child(9) {
+        .item {
+          margin-bottom: 40px;
+          &:first-child {
+            img {
+              width: 180px;
+              margin: auto;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0px;
+          }
+          .strategic-logo {
+             @include flex;
+             align-items: center;
+             justify-content: space-around;
+             margin: auto;
+            flex-wrap: wrap;
+             .image {
+               width: 20%;
+               padding: 0px 15px;
+               margin-bottom: 20px;
+               @media #{$info-ipad-pro} {
+                 padding: 0px 10px;
+               }
+               @media #{$info-ipad} {
+                 padding: 0px 5px;
+               }
+             }
+           }
+          .inkind-logo {
+            @include flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: auto;
+            .image {
+              width: 20%;
+            }
+          }
+        }
       }
     }
   }
@@ -768,6 +941,9 @@
       }
     }
     //Logo brand
+    &-logo {
+      width: 100%;
+    }
   }
 }
 
