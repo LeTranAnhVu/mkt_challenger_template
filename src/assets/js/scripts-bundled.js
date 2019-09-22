@@ -182,6 +182,8 @@ function () {
     key: "bindEvents",
     value: function bindEvents() {
       console.log('Common JS');
+      new WOW().init(); // this.HideCollapseMobile();
+
       this.AddActiveNavbarToggle();
       this.bannerHome.css('marginTop', Math.round(this.headerHeight));
     }
@@ -200,7 +202,12 @@ function () {
           self.navbarToggleIcon.removeClass('active');
         }
       });
-    }
+    } // HideCollapseMobile () {
+    //     this.navbarCollapse.on('click', 'a' , function () {
+    //         this.navbarCollapse.collapse('hide');
+    //     })
+    // }
+
   }]);
 
   return Common;
@@ -265,7 +272,6 @@ function () {
     key: "bindEvents",
     value: function bindEvents() {
       console.log('page home');
-      new WOW().init();
       this.SlickPhoto();
       this.SlickNews();
       this.AddActiveButtonSeason();
@@ -452,6 +458,12 @@ function () {
         if ($(this).html() === 'Sponsors') {
           self.pageScroll.animate({
             scrollTop: $('#sponsors').offset().top - 80
+          }, 'slow');
+        }
+
+        if ($(this).html() === 'Contact') {
+          self.pageScroll.animate({
+            scrollTop: $('#footer').offset().top
           }, 'slow');
         }
       });

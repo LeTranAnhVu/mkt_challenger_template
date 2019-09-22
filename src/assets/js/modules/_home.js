@@ -38,7 +38,6 @@ export default class Home {
    * =================================== */
   bindEvents(){
     console.log('page home')
-    new WOW().init();
     this.SlickPhoto();
     this.SlickNews();
     this.AddActiveButtonSeason();
@@ -211,6 +210,11 @@ export default class Home {
       if($(this).html() === 'Sponsors') {
         self.pageScroll.animate({
           scrollTop: $('#sponsors').offset().top - 80
+        }, 'slow');
+      }
+      if($(this).html() === 'Contact') {
+        self.pageScroll.animate({
+          scrollTop: $('#footer').offset().top
         }, 'slow');
       }
     })

@@ -19,6 +19,8 @@ export default class Common {
      * =================================== */
     bindEvents(){
         console.log('Common JS')
+        new WOW().init();
+        // this.HideCollapseMobile();
         this.AddActiveNavbarToggle();
         this.bannerHome.css('marginTop',Math.round(this.headerHeight));
     }
@@ -37,4 +39,9 @@ export default class Common {
         })
     }
 
+    // HideCollapseMobile () {
+    //     this.navbarCollapse.on('click', 'a' , function () {
+    //         this.navbarCollapse.collapse('hide');
+    //     })
+    // }
 }
