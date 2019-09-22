@@ -6793,3 +6793,116 @@ img {
 @media only screen and (max-width: 341px) {
   .common-form .body-form-content form {
     width: 250px; } }
+
+.team-form .body-form-timeline {
+  position: relative;
+  width: 25%; }
+  .team-form .body-form-timeline .item {
+    margin-bottom: 90px; }
+
+.team-form .body-form-content form {
+  width: 100%; }
+  .team-form .body-form-content form .item {
+    width: 350px;
+    margin: auto;
+    text-align: center; }
+    .team-form .body-form-content form .item-image {
+      margin-bottom: 20px; }
+    .team-form .body-form-content form .item .form-group {
+      margin-bottom: 30px; }
+    .team-form .body-form-content form .item .form-radio {
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px; }
+      .team-form .body-form-content form .item .form-radio .form-check {
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0px; }
+        .team-form .body-form-content form .item .form-radio .form-check-input {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          position: relative;
+          margin: 0px;
+          width: 16px;
+          height: 16px;
+          background-color: #ffffff;
+          border: 1px solid #d7d7d7;
+          -webkit-border-radius: 50%;
+          -khtml-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%;
+          outline: none; }
+          .team-form .body-form-content form .item .form-radio .form-check-input:before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #d7d7d7;
+            -webkit-border-radius: 50%;
+            -khtml-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -khtml-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+          .team-form .body-form-content form .item .form-radio .form-check-input:checked {
+            border: 1px solid #f2792a; }
+            .team-form .body-form-content form .item .form-radio .form-check-input:checked + label {
+              color: #f2792a; }
+            .team-form .body-form-content form .item .form-radio .form-check-input:checked:before {
+              background: #f2792a; }
+        .team-form .body-form-content form .item .form-radio .form-check-label {
+          font-size: 14px;
+          font-weight: 600;
+          color: #d7d7d7; }
+    .team-form .body-form-content form .item .button-group .btn {
+      background-color: #f2792a;
+      font-weight: 800;
+      font-size: 14px;
+      color: #ffffff;
+      padding: 4px 20px; }
+      .team-form .body-form-content form .item .button-group .btn-pre {
+        float: left; }
+      .team-form .body-form-content form .item .button-group .btn-next {
+        float: right; }
+      .team-form .body-form-content form .item .button-group .btn-submit {
+        float: right; }
+    .team-form .body-form-content form .item .button-group .clear {
+      clear: both; }
+    .team-form .body-form-content form .item-member {
+      width: 100%; }
+      .team-form .body-form-content form .item-member .form-group {
+        padding: 0px 20px; }
+      .team-form .body-form-content form .item-member .button-group {
+        padding: 0px 20px; }
+
+@media only screen and (max-width: 768px) {
+  .team-form .body-form-timeline {
+    width: 100%; }
+    .team-form .body-form-timeline .item {
+      margin-bottom: 0px; } }
+
+@media only screen and (max-width: 576px) {
+  .team-form .body-form-content form .item {
+    width: 300px; } }
+
+@media only screen and (max-width: 341px) {
+  .team-form .body-form-content form .item {
+    width: 280px; } }

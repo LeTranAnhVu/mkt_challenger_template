@@ -241,3 +241,171 @@
     }
   }
 }
+
+
+
+.team-form {
+  //Body content
+  .body-form {
+    //Timeline
+    &-timeline {
+      position: relative;
+      width: 25%;
+
+      .item {
+        margin-bottom: 90px;
+      }
+    }
+    //Content
+    &-content {
+      //Form
+      form {
+        width: 100%;
+        .item {
+          width: 350px;
+          margin: auto;
+          text-align: center;
+          &-image {
+            margin-bottom: 20px;
+          }
+          //Form input
+          .form-group {
+            margin-bottom: 30px;
+          }
+          //Radio button
+          .form-radio {
+            @include flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            .form-check {
+              @include flex;
+              flex-direction: column-reverse;
+              align-items: center;
+              padding: 0px;
+              &-input {
+                -webkit-appearance: none;
+                -moz-appearance:    none;
+                appearance:         none;
+                position: relative;
+                margin: 0px;
+                width: 16px;
+                height: 16px;
+                background-color: #ffffff;
+                border: 1px solid #d7d7d7;
+                @include border-radius(50%);
+                outline: none;
+                &:before {
+                  content: '';
+                  position: absolute;
+                  width: 8px;
+                  height: 8px;
+                  background: #d7d7d7;
+                  @include border-radius(50%);
+                  left: 50%;
+                  top: 50%;
+                  @include transform(translate(-50%,-50%));
+                }
+                &:checked {
+                  border: 1px solid #f2792a;
+                  &+label {
+                    color: #f2792a;
+                  }
+                  &:before {
+                    background: #f2792a;
+                  }
+                }
+              }
+              &-label {
+                font-size: 14px;
+                font-weight: 600;
+                color: #d7d7d7;
+              }
+            }
+          }
+          //Button next & pre & submit
+          .button-group {
+            .btn {
+              background-color: #f2792a;
+              font-weight: 800;
+              font-size: 14px;
+              color: #ffffff;
+              padding: 4px 20px;
+              &-pre {
+                float: left;
+              }
+              &-next {
+                float: right;
+              }
+              &-submit {
+                float: right;
+              }
+            }
+            .clear {
+              clear: both;
+            }
+          }
+          //Item member
+          &-member {
+            width: 100%;
+            .form-group {
+              padding: 0px 20px;
+            }
+            .button-group {
+              padding: 0px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$info-ipad} {
+  .team-form {
+    //Body content
+    .body-form {
+      //Timeline
+      &-timeline {
+        width: 100%;
+
+        .item {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$info-phone-normal} {
+  .team-form {
+    //Body content
+    .body-form {
+      //Content
+      &-content {
+        //Form
+        form {
+          .item {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$info-phone-small} {
+  .team-form {
+    //Body content
+    .body-form {
+      //Content
+      &-content {
+        //Form
+        form {
+          .item {
+            width: 280px;
+          }
+        }
+      }
+    }
+  }
+}

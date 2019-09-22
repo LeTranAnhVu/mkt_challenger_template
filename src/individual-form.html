@@ -99,55 +99,58 @@
             </div>
             <!--form content-->
             <div class="body-form-content">
-                <!--form basic-->
-                <form action="#" name="frm-basic" class="frm-basic d-none">
-                    <div class="title-common">
-                        <h3>Candidate</h3>
+                <!--form-->
+                <form action="#" name="frm-individual" class="frm-individual">
+                    <!--form basic-->
+                    <div class="item">
+                        <div class="title-common">
+                            <h3>Candidate</h3>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Full Name...">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="phone" name="phone" class="form-control" placeholder="Mobile Phone...">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Email Address...">
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="birth" name="birth" class="form-control">
+                        </div>
+                        <div class="button-group">
+                            <button class="btn btn-next">Next</button>
+                            <div class="clear"></div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Full Name...">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="phone" name="phone" class="form-control" placeholder="Mobile Phone...">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="email" name="email" class="form-control" placeholder="Email Address...">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="birth" name="birth" class="form-control" placeholder="Full Name...">
-                    </div>
-                    <div class="button-group">
-                        <button class="btn btn-next">Next</button>
-                        <div class="clear"></div>
+                    <!--form other-->
+                    <div class="item d-none">
+                        <div class="title-common">
+                            <h3>Candidate</h3>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="fblink" name="fblink" class="form-control" placeholder="Facebook Link...">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="location" name="location">
+                                <option value="tphcm" selected>TP HCM</option>
+                                <option value="hn">Hà Nội</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="university" name="university">
+                                <option value="rmit" selected>RMIT Vietnam</option>
+                                <option value="ftu">Foreign Trade University</option>
+                            </select>
+                        </div>
+                        <div class="button-group">
+                            <button class="btn btn-pre">Previous</button>
+                            <button type="submit" class="btn btn-submit">Submit</button>
+                            <div class="clear"></div>
+                        </div>
                     </div>
                 </form>
-                <!--form other-->
-                <form action="#" name="frm-other" class="frm-other ">
-                    <div class="title-common">
-                        <h3>Candidate</h3>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="fblink" name="fblink" class="form-control" placeholder="Facebook Link...">
-                    </div>
-                    <div class="form-group">
-                        <select class="form-control" id="location" name="location">
-                            <option value="tphcm" selected>TP HCM</option>
-                            <option value="hn">Hà Nội</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <select class="form-control" id="university" name="university">
-                            <option value="rmit" selected>RMIT Vietnam</option>
-                            <option value="ftu">Foreign Trade University</option>
-                        </select>
-                    </div>
-                    <div class="button-group">
-                        <button class="btn btn-pre">Previous</button>
-                        <button type="submit" class="btn btn-submit">Submit</button>
-                        <div class="clear"></div>
-                    </div>
-                </form>
-                <!--Submission-->
+                <!--submission-->
                 <div class="submission d-none">
                     <div class="content">
                         <img src="./assets/images/submission.png" alt="rocket">
