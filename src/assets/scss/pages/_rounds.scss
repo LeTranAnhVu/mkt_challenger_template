@@ -1,0 +1,202 @@
+.rounds {
+  margin-top: 76px;
+  background-color: #ebebeb;
+  //Head news
+  .head-rounds {
+    background-color: #ffffff;
+    border-bottom: 2px solid #d7d7d7;
+    .title-common {
+      text-align: left;
+      margin-bottom: 0px;
+      h3 {
+        width: auto;
+        height: auto;
+        font-size: 19px;
+        padding: 10px 20px;
+        margin: 30px 0px;
+      }
+    }
+  }
+
+  //content
+  .tab-content {
+    background: #ffffff;
+    h3 {
+      text-align: center;
+      background: #ff7c27;
+      color: #ffffff;
+      font-weight: bold;
+      padding: 10px 0px;
+      border-bottom: 2px solid #2a354c;
+    }
+    //Content style css
+    .content {
+      padding: 20px;
+      //Title big blue
+      h4 {
+        position: relative;
+        font-weight: bold;
+        color: #2a354c;
+        margin-bottom: 12px;
+        padding-left: 18px;
+        font-size: 22px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0px;
+          top: 50%;
+          width: 10px;
+          height: 10px;
+          margin-top: -5px;
+          background: #2a354c;
+        }
+      }
+      //Title small
+      .title-small {
+        position: relative;
+        font-weight: bold;
+        color: #2a354c;
+        margin-bottom: 12px;
+        padding-left: 18px;
+        font-size: 18px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0px;
+          top: 50%;
+          width: 8px;
+          height: 8px;
+          margin-top: -4px;
+          background: #2a354c;
+        }
+      }
+      //Padding left space
+      .text-space {
+        padding-left: 20px;
+      }
+      //Color orange
+      .orange {
+        color: #f2792a;
+      }
+      //Text default
+      p {
+        margin-bottom: 12px;
+        a {
+          font-weight: 600;
+          &:hover {
+            color: #2a354c;
+          }
+        }
+      }
+      ul {
+        margin-bottom: 10px;
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+
+  //list round
+  .nav-tabs {
+    @include flex;
+    flex-wrap: unset;
+    flex-direction: column;
+    li {
+      margin: 0px;
+      width: 100%;
+      a {
+        text-align: center;
+        background: #2a354c;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #ffffff;
+        border: none;
+        @include border-radius(0px);
+        padding: 20px 0px;
+        font-size: 20px;
+        &.active {
+          background: #ff7c27;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media #{$info-ipad-pro} {
+  .rounds {
+    //content
+    .tab-content {
+      h3 {
+        font-size: 20px;
+      }
+      .content {
+        padding: 15px;
+        p {
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+        ul {
+          margin-bottom: 8px;
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    //list round
+    .nav-tabs {
+      @include flex;
+      flex-wrap: unset;
+      flex-direction: column;
+      li {
+        margin: 0px;
+        a {
+          text-align: center;
+          background: #2a354c;
+          text-transform: uppercase;
+          font-weight: 800;
+          color: #ffffff;
+          border: none;
+          @include border-radius(0px);
+          padding: 12px 0px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+//Media special ( just screen 768 )
+@media screen and (width: 768px) {
+  .rounds {
+    //list round rule regulation
+    .rule-regulation {
+      li {
+        width: 100%!important;
+        a {
+          font-size: 14px!important;
+          padding: 10px 0px!important;
+        }
+      }
+    }
+  }
+}
+
+@media #{$info-ipad} {
+  .rounds {
+    //list round rule regulation
+    .rule-regulation {
+      flex-wrap: wrap;
+      li {
+        width: 50%;
+        a {
+          font-size: 12px;
+          padding: 10px 0px;
+        }
+      }
+    }
+  }
+}

@@ -2922,3 +2922,157 @@ img {
           color: #f2792a;
           margin-bottom: 20px;
           font-size: 12px; }
+
+.rounds {
+  margin-top: 76px;
+  background-color: #ebebeb; }
+  .rounds .head-rounds {
+    background-color: #ffffff;
+    border-bottom: 2px solid #d7d7d7; }
+    .rounds .head-rounds .title-common {
+      text-align: left;
+      margin-bottom: 0px; }
+      .rounds .head-rounds .title-common h3 {
+        width: auto;
+        height: auto;
+        font-size: 19px;
+        padding: 10px 20px;
+        margin: 30px 0px; }
+  .rounds .tab-content {
+    background: #ffffff; }
+    .rounds .tab-content h3 {
+      text-align: center;
+      background: #ff7c27;
+      color: #ffffff;
+      font-weight: bold;
+      padding: 10px 0px;
+      border-bottom: 2px solid #2a354c; }
+    .rounds .tab-content .content {
+      padding: 20px; }
+      .rounds .tab-content .content h4 {
+        position: relative;
+        font-weight: bold;
+        color: #2a354c;
+        margin-bottom: 12px;
+        padding-left: 18px;
+        font-size: 22px; }
+        .rounds .tab-content .content h4:before {
+          content: '';
+          position: absolute;
+          left: 0px;
+          top: 50%;
+          width: 10px;
+          height: 10px;
+          margin-top: -5px;
+          background: #2a354c; }
+      .rounds .tab-content .content .title-small {
+        position: relative;
+        font-weight: bold;
+        color: #2a354c;
+        margin-bottom: 12px;
+        padding-left: 18px;
+        font-size: 18px; }
+        .rounds .tab-content .content .title-small:before {
+          content: '';
+          position: absolute;
+          left: 0px;
+          top: 50%;
+          width: 8px;
+          height: 8px;
+          margin-top: -4px;
+          background: #2a354c; }
+      .rounds .tab-content .content .text-space {
+        padding-left: 20px; }
+      .rounds .tab-content .content .orange {
+        color: #f2792a; }
+      .rounds .tab-content .content p {
+        margin-bottom: 12px; }
+        .rounds .tab-content .content p a {
+          font-weight: 600; }
+          .rounds .tab-content .content p a:hover {
+            color: #2a354c; }
+      .rounds .tab-content .content ul {
+        margin-bottom: 10px; }
+        .rounds .tab-content .content ul li {
+          list-style: none; }
+  .rounds .nav-tabs {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: unset;
+    flex-direction: column; }
+    .rounds .nav-tabs li {
+      margin: 0px;
+      width: 100%; }
+      .rounds .nav-tabs li a {
+        text-align: center;
+        background: #2a354c;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #ffffff;
+        border: none;
+        -webkit-border-radius: 0px;
+        -khtml-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+        border-radius: 0px;
+        padding: 20px 0px;
+        font-size: 20px; }
+        .rounds .nav-tabs li a.active {
+          background: #ff7c27;
+          color: #ffffff; }
+
+@media only screen and (max-width: 992px) {
+  .rounds .tab-content h3 {
+    font-size: 20px; }
+  .rounds .tab-content .content {
+    padding: 15px; }
+    .rounds .tab-content .content p {
+      font-size: 14px;
+      margin-bottom: 8px; }
+    .rounds .tab-content .content ul {
+      margin-bottom: 8px; }
+      .rounds .tab-content .content ul li {
+        font-size: 14px; }
+  .rounds .nav-tabs {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: unset;
+    flex-direction: column; }
+    .rounds .nav-tabs li {
+      margin: 0px; }
+      .rounds .nav-tabs li a {
+        text-align: center;
+        background: #2a354c;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #ffffff;
+        border: none;
+        -webkit-border-radius: 0px;
+        -khtml-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+        border-radius: 0px;
+        padding: 12px 0px;
+        font-size: 16px; } }
+
+@media screen and (width: 768px) {
+  .rounds .rule-regulation li {
+    width: 100% !important; }
+    .rounds .rule-regulation li a {
+      font-size: 14px !important;
+      padding: 10px 0px !important; } }
+
+@media only screen and (max-width: 768px) {
+  .rounds .rule-regulation {
+    flex-wrap: wrap; }
+    .rounds .rule-regulation li {
+      width: 50%; }
+      .rounds .rule-regulation li a {
+        font-size: 12px;
+        padding: 10px 0px; } }
