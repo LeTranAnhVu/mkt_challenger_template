@@ -1,21 +1,35 @@
 .news-detail {
   margin-top: 76px;
-  .content-editor {
-    padding: 50px 150px;
+  .content {
+    padding: 40px 0px;
     border-bottom: 2px solid #f2792a;
-    @media #{$info-ipad-pro} {
-      padding: 50px 0px;
-    }
-    img {
-      @include border-radius(5px);
-      -webkit-box-shadow: 0px 0px 5px 0px #f2792a;
-      -moz-box-shadow:    0px 0px 5px 0px #f2792a;
-      box-shadow:         0px 0px 5px 0px #f2792a;
+    &-info {
+      border-bottom: 1px solid #eeeeee;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      h3 {
+        font-size: 40px;
+        font-weight: 700;
+        color: orange;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 18px;
+        color: #000000;
+        font-weight: 500;
+        line-height: 25px;
+        margin-bottom: 15px;
+      }
+      span {
+        display: block;
+        font-weight: bold;
+        color: #f2792a;
+      }
     }
   }
   //List item
   .new-related {
-    margin: 60px 0px;
+    padding: 50px 0px;
     .equal-height {
       @include flex;
     }
@@ -100,6 +114,34 @@
           color: #f2792a;
           margin-bottom: 20px;
           font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$info-ipad} {
+  .news-detail {
+    .content {
+      &-info {
+        h3 {
+          font-size: 25px;
+          font-weight: 700;
+          color: orange;
+          margin-bottom: 15px;
+          line-height: 35px;
+        }
+        p {
+          font-size: 18px;
+          color: #000000;
+          font-weight: 500;
+          line-height: 25px;
+          margin-bottom: 15px;
+        }
+        span {
+          display: block;
+          font-weight: bold;
+          color: #f2792a;
         }
       }
     }
