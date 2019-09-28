@@ -1,4 +1,4 @@
-.loading-page {
+.loading {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,6 +9,12 @@
   justify-content: center;
   align-items: center;
   z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+}
+.loading-page {
+  opacity: 1;
+  visibility: visible;
   @include animation(animate-hidden-loading 1s ease forwards 5s);
   svg {
     fill: transparent;

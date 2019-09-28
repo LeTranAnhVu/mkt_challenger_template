@@ -23,6 +23,7 @@ $( document ).ready(function() {
   var bannerContest = $('#banner-contest');
   var sponsors = $('#sponsors');
   var news = $('#news');
+  var backToTop = $('.back-to-top');
 
   //Slick slide sync section photo
   function SlickPhoto () {
@@ -162,9 +163,12 @@ $( document ).ready(function() {
         ResetClassActiveNavItem();
         navItem04.addClass('active')
       }
-      if(currentOffset >= news.offset().top - 50) {
+      if(currentOffset >= news.offset().top - 80) {
         ResetClassActiveNavItem();
         navItem05.addClass('active')
+        backToTop.addClass('show')
+      }else {
+        backToTop.removeClass('show')
       }
     })
   }
@@ -173,7 +177,7 @@ $( document ).ready(function() {
   function ScrollTopBody () {
     navLink.on('click', function (e) {
       //set prevent default
-      e.preventDefault()
+      e.preventDefault();
       //condition scroll
       if($(this).html() === 'Home') {
         pageScroll.animate({
@@ -200,6 +204,14 @@ $( document ).ready(function() {
           scrollTop: $('#footer').offset().top
         }, 'slow');
       }
+    })
+    //click back to top
+    backToTop.on('click', function (e) {
+      //set prevent default
+      e.preventDefault();
+      pageScroll.animate({
+        scrollTop: 0
+      }, 'slow');
     })
   }
 

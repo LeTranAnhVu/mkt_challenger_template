@@ -32,6 +32,7 @@
     //Content style css
     .content {
       padding: 20px;
+      min-height: 470px;
       //Title big blue
       h4 {
         position: relative;
@@ -77,6 +78,11 @@
       //Color orange
       .orange {
         color: #f2792a;
+      }
+      //Color orange
+      .orange-bold {
+        color: #f2792a;
+        font-weight: bold;
       }
       //Text default
       p {

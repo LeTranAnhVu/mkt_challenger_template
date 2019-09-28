@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 680px;
+  height: 780px;
   @include flex;
   justify-content: center;
   align-items: flex-end;
@@ -108,6 +108,12 @@
 }
 
 //---Reponsive Banner Home-----
+@media #{$info-laptop-medium} {
+  .banner-home {
+    height: 592px;
+  }
+}
+
 @media #{$info-laptop-normal} {
   .banner-home {
     background-size: cover;
@@ -166,34 +172,37 @@
   background-size: cover;
   background-position: top;
   width: 100%;
-  margin-top: -140px;
+  margin-top: -130px;
   .about {
     position: relative;
     @include flex;
     padding: 160px 0px 30px;
     //Image
     &-image {
-      width: 40%;
+      width: 50%;
       text-align: center;
       @include animation(animate-boating 4s linear infinite);
+      img {
+        width: 100%;
+      }
     }
     //Content
     &-content {
-      width: 60%;
+      width: 50%;
       margin-top: 65px;
       padding-left: 50px;
       .item {
         margin-bottom: 15px;
         h4 {
-          font-size: 18px;
+          font-size: 22px;
           font-weight: 900;
           color: #ffffff;
         }
         p {
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 500;
           color: #2a354c;
-          line-height: 18px;
+          line-height: 20px;
         }
       }
     }
@@ -201,11 +210,25 @@
 }
 
 //----------Responsive Banner About----------
-@media #{$info-laptop-normal} {
+@media #{$info-laptop-medium} {
   .banner-about {
     background-size: cover;
     background-position: center center;
+    height: unset;
     margin-top: -100px;
+    .about {
+      //Image
+      &-image {
+        width: 40%;
+        text-align: center;
+        img {
+          width: unset;
+        }
+      }
+      &-content {
+        width: 60%;
+      }
+    }
   }
 }
 
@@ -974,8 +997,8 @@
     //Slide for
     .slide-photo-for {
       .slick-list {
-        width: 550px;
-        height: 310px;
+        width: 750px;
+        height: 480px;
         margin: 0px auto 20px;
         box-shadow: 10px 10px 30px -4px rgba(0, 0, 0, 0.42);
         .slick-track {
@@ -1056,6 +1079,12 @@
   }
 }
 //----------Responsive Photos----------
+@media #{$info-laptop-medium} {
+  .photos {
+    padding: 80px 0px;
+  }
+}
+
 @media #{$info-ipad-pro} {
   .photos {
     padding: 60px 0px;
@@ -1258,6 +1287,7 @@
   }
 }
 .news-title-special {
+  position: relative;
   .title-common {
     margin: 200px 0px 60px;
   }
@@ -1371,5 +1401,42 @@
     .title-common {
       margin: 140px 0px 50px;
     }
+  }
+}
+
+
+//----------Button scroll to top-----------
+.back-to-top {
+  position: absolute;
+  z-index: 50;
+  background: #f2792a;
+  bottom: 0px;
+  right: 0px;
+  margin: 0px 30px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  box-shadow: none;
+  @include border-radius(50%);
+  @include transition(all 0.3s);
+  opacity: 0;
+  visibility: hidden;
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  &:focus {
+    outline: none;
+  }
+  img {
+    width: 25px;
+  }
+}
+
+@media #{$info-phone-normal} {
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    margin: 0px 15px;
   }
 }

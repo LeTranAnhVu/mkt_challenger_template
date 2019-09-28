@@ -1,10 +1,12 @@
 #header {
   position: fixed;
   top:0;
-  left: 0;
+  left: 50%;
   z-index: 90;
   width: 100%;
   background: #2a354c;
+  max-width: 1920px;
+  @include transform(translateX(-50%));
   .navbar {
     padding: 0;
     //Logo
