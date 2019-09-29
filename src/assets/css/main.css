@@ -943,8 +943,8 @@ img {
       stroke-width: 3px;
       stroke-linejoin: round; }
       .loading-page svg path:nth-child(1) {
-        stroke-dasharray: 332;
-        stroke-dashoffset: 332;
+        stroke-dasharray: 433;
+        stroke-dashoffset: 433;
         -webkit-animation: animate-path-line 0.8s ease forwards;
         -khtml-animation: animate-path-line 0.8s ease forwards;
         -moz-animation: animate-path-line 0.8s ease forwards;
@@ -952,8 +952,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards;
         animation: animate-path-line 0.8s ease forwards; }
       .loading-page svg path:nth-child(2) {
-        stroke-dasharray: 286;
-        stroke-dashoffset: 286;
+        stroke-dasharray: 373;
+        stroke-dashoffset: 373;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.2s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.2s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.2s;
@@ -961,8 +961,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 0.2s;
         animation: animate-path-line 0.8s ease forwards 0.2s; }
       .loading-page svg path:nth-child(3) {
-        stroke-dasharray: 301;
-        stroke-dashoffset: 301;
+        stroke-dasharray: 393;
+        stroke-dashoffset: 393;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.4s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.4s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.4s;
@@ -970,8 +970,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 0.4s;
         animation: animate-path-line 0.8s ease forwards 0.4s; }
       .loading-page svg path:nth-child(4) {
-        stroke-dasharray: 319;
-        stroke-dashoffset: 319;
+        stroke-dasharray: 416;
+        stroke-dashoffset: 416;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.6s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.6s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.6s;
@@ -979,8 +979,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 0.6s;
         animation: animate-path-line 0.8s ease forwards 0.6s; }
       .loading-page svg path:nth-child(5) {
-        stroke-dasharray: 285;
-        stroke-dashoffset: 285;
+        stroke-dasharray: 371;
+        stroke-dashoffset: 371;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.8s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.8s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.8s;
@@ -988,8 +988,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 0.8s;
         animation: animate-path-line 0.8s ease forwards 0.8s; }
       .loading-page svg path:nth-child(6) {
-        stroke-dasharray: 216;
-        stroke-dashoffset: 216;
+        stroke-dasharray: 282;
+        stroke-dashoffset: 282;
         -webkit-animation: animate-path-line 0.8s ease forwards 1s;
         -khtml-animation: animate-path-line 0.8s ease forwards 1s;
         -moz-animation: animate-path-line 0.8s ease forwards 1s;
@@ -997,8 +997,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 1s;
         animation: animate-path-line 0.8s ease forwards 1s; }
       .loading-page svg path:nth-child(7) {
-        stroke-dasharray: 165;
-        stroke-dashoffset: 165;
+        stroke-dasharray: 216;
+        stroke-dashoffset: 216;
         -webkit-animation: animate-path-line 0.8s ease forwards 1.2s;
         -khtml-animation: animate-path-line 0.8s ease forwards 1.2s;
         -moz-animation: animate-path-line 0.8s ease forwards 1.2s;
@@ -1006,8 +1006,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 1.2s;
         animation: animate-path-line 0.8s ease forwards 1.2s; }
       .loading-page svg path:nth-child(8) {
-        stroke-dasharray: 285;
-        stroke-dashoffset: 285;
+        stroke-dasharray: 372;
+        stroke-dashoffset: 372;
         -webkit-animation: animate-path-line 0.8s ease forwards 1.4s;
         -khtml-animation: animate-path-line 0.8s ease forwards 1.4s;
         -moz-animation: animate-path-line 0.8s ease forwards 1.4s;
@@ -1015,8 +1015,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 1.4s;
         animation: animate-path-line 0.8s ease forwards 1.4s; }
       .loading-page svg path:nth-child(9) {
-        stroke-dasharray: 281;
-        stroke-dashoffset: 281;
+        stroke-dasharray: 367;
+        stroke-dashoffset: 367;
         -webkit-animation: animate-path-line 0.8s ease forwards 1.6s;
         -khtml-animation: animate-path-line 0.8s ease forwards 1.6s;
         -moz-animation: animate-path-line 0.8s ease forwards 1.6s;
@@ -1024,8 +1024,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 1.6s;
         animation: animate-path-line 0.8s ease forwards 1.6s; }
       .loading-page svg path:nth-child(10) {
-        stroke-dasharray: 234;
-        stroke-dashoffset: 234;
+        stroke-dasharray: 305;
+        stroke-dashoffset: 305;
         -webkit-animation: animate-path-line 0.8s ease forwards;
         -khtml-animation: animate-path-line 0.8s ease forwards;
         -moz-animation: animate-path-line 0.8s ease forwards;
@@ -1033,8 +1033,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards;
         animation: animate-path-line 0.8s ease forwards; }
       .loading-page svg path:nth-child(11) {
-        stroke-dasharray: 326;
-        stroke-dashoffset: 326;
+        stroke-dasharray: 425;
+        stroke-dashoffset: 425;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.2s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.2s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.2s;
@@ -1042,8 +1042,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 0.2s;
         animation: animate-path-line 0.8s ease forwards 0.2s; }
       .loading-page svg path:nth-child(12) {
-        stroke-dasharray: 286;
-        stroke-dashoffset: 286;
+        stroke-dasharray: 373;
+        stroke-dashoffset: 373;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.4s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.4s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.4s;
@@ -1051,8 +1051,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 0.4s;
         animation: animate-path-line 0.8s ease forwards 0.4s; }
       .loading-page svg path:nth-child(13) {
-        stroke-dasharray: 210;
-        stroke-dashoffset: 210;
+        stroke-dasharray: 273;
+        stroke-dashoffset: 273;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.6s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.6s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.6s;
@@ -1060,8 +1060,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 0.6s;
         animation: animate-path-line 0.8s ease forwards 0.6s; }
       .loading-page svg path:nth-child(14) {
-        stroke-dasharray: 210;
-        stroke-dashoffset: 210;
+        stroke-dasharray: 273;
+        stroke-dashoffset: 273;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.8s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.8s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.8s;
@@ -1069,8 +1069,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 0.8s;
         animation: animate-path-line 0.8s ease forwards 0.8s; }
       .loading-page svg path:nth-child(15) {
-        stroke-dasharray: 285;
-        stroke-dashoffset: 285;
+        stroke-dasharray: 371;
+        stroke-dashoffset: 371;
         -webkit-animation: animate-path-line 0.8s ease forwards 1s;
         -khtml-animation: animate-path-line 0.8s ease forwards 1s;
         -moz-animation: animate-path-line 0.8s ease forwards 1s;
@@ -1078,8 +1078,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 1s;
         animation: animate-path-line 0.8s ease forwards 1s; }
       .loading-page svg path:nth-child(16) {
-        stroke-dasharray: 285;
-        stroke-dashoffset: 285;
+        stroke-dasharray: 372;
+        stroke-dashoffset: 372;
         -webkit-animation: animate-path-line 0.8s ease forwards 1.2s;
         -khtml-animation: animate-path-line 0.8s ease forwards 1.2s;
         -moz-animation: animate-path-line 0.8s ease forwards 1.2s;
@@ -1087,8 +1087,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 1.2s;
         animation: animate-path-line 0.8s ease forwards 1.2s; }
       .loading-page svg path:nth-child(17) {
-        stroke-dasharray: 281;
-        stroke-dashoffset: 281;
+        stroke-dasharray: 367;
+        stroke-dashoffset: 367;
         -webkit-animation: animate-path-line 0.8s ease forwards 1.4s;
         -khtml-animation: animate-path-line 0.8s ease forwards 1.4s;
         -moz-animation: animate-path-line 0.8s ease forwards 1.4s;
@@ -1096,8 +1096,8 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 1.4s;
         animation: animate-path-line 0.8s ease forwards 1.4s; }
       .loading-page svg path:nth-child(18) {
-        stroke-dasharray: 285;
-        stroke-dashoffset: 285;
+        stroke-dasharray: 371;
+        stroke-dashoffset: 371;
         -webkit-animation: animate-path-line 0.8s ease forwards 1.6s;
         -khtml-animation: animate-path-line 0.8s ease forwards 1.6s;
         -moz-animation: animate-path-line 0.8s ease forwards 1.6s;
@@ -1105,14 +1105,23 @@ img {
         -o-animation: animate-path-line 0.8s ease forwards 1.6s;
         animation: animate-path-line 0.8s ease forwards 1.6s; }
       .loading-page svg path:nth-child(19) {
-        stroke-dasharray: 301;
-        stroke-dashoffset: 301;
+        stroke-dasharray: 393;
+        stroke-dashoffset: 393;
         -webkit-animation: animate-path-line 0.8s ease forwards 1.8s;
         -khtml-animation: animate-path-line 0.8s ease forwards 1.8s;
         -moz-animation: animate-path-line 0.8s ease forwards 1.8s;
         -ms-animation: animate-path-line 0.8s ease forwards 1.8s;
         -o-animation: animate-path-line 0.8s ease forwards 1.8s;
         animation: animate-path-line 0.8s ease forwards 1.8s; }
+      .loading-page svg path:nth-child(20) {
+        stroke-dasharray: 370;
+        stroke-dashoffset: 370;
+        -webkit-animation: animate-path-line 0.8s ease forwards 2s;
+        -khtml-animation: animate-path-line 0.8s ease forwards 2s;
+        -moz-animation: animate-path-line 0.8s ease forwards 2s;
+        -ms-animation: animate-path-line 0.8s ease forwards 2s;
+        -o-animation: animate-path-line 0.8s ease forwards 2s;
+        animation: animate-path-line 0.8s ease forwards 2s; }
 
 #home-page {
   overflow: hidden; }
@@ -2555,7 +2564,7 @@ img {
         .common-form .body-form-content .title-common h3 {
           width: auto;
           height: auto;
-          font-size: 16px;
+          font-size: 20px;
           padding: 8px 20px; }
       .common-form .body-form-content form {
         width: 300px;
@@ -2573,12 +2582,12 @@ img {
             -o-border-radius: inherit;
             border-radius: inherit;
             color: #000000;
-            font-size: 11px;
-            height: 35px;
+            font-size: 15px;
+            height: 45px;
             font-weight: 600;
             outline: none;
             box-shadow: none;
-            padding: .375rem 8px; }
+            padding: .375rem 10px; }
             .common-form .body-form-content form .form-group .form-control:focus {
               border: 2px solid #f2792a; }
             .common-form .body-form-content form .form-group .form-control::placeholder {
@@ -2586,9 +2595,9 @@ img {
         .common-form .body-form-content form .button-group .btn {
           background-color: #f2792a;
           font-weight: 800;
-          font-size: 14px;
+          font-size: 16px;
           color: #ffffff;
-          padding: 4px 20px; }
+          padding: 6px 20px; }
           .common-form .body-form-content form .button-group .btn-pre {
             float: left; }
           .common-form .body-form-content form .button-group .btn-next {
@@ -2746,9 +2755,9 @@ img {
     .team-form .body-form-content form .item .button-group .btn {
       background-color: #f2792a;
       font-weight: 800;
-      font-size: 14px;
+      font-size: 16px;
       color: #ffffff;
-      padding: 4px 20px; }
+      padding: 6px 20px; }
       .team-form .body-form-content form .item .button-group .btn-pre {
         float: left; }
       .team-form .body-form-content form .item .button-group .btn-next {
