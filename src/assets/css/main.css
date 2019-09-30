@@ -763,8 +763,7 @@ img {
       padding: 0;
       margin: 10px 0px; }
       #header .navbar-brand img {
-        width: 100%;
-        height: 100%; }
+        width: 100%; }
     #header .navbar-toggler {
       padding: 0px;
       outline: none;
@@ -2920,6 +2919,73 @@ img {
         display: block;
         font-weight: bold;
         color: #f2792a; }
+    .news-detail .content-editor .title-01 {
+      font-size: 40px;
+      font-weight: bold; }
+    .news-detail .content-editor .title-02 {
+      font-size: 32px;
+      font-weight: bold; }
+    .news-detail .content-editor .title-03 {
+      font-size: 28px;
+      font-weight: bold; }
+    .news-detail .content-editor .title-04 {
+      font-size: 24px;
+      font-weight: bold; }
+    .news-detail .content-editor .title-05 {
+      font-size: 20px;
+      font-weight: bold; }
+    .news-detail .content-editor .title-square {
+      position: relative;
+      padding-left: 25px; }
+      .news-detail .content-editor .title-square:before {
+        content: '';
+        position: absolute;
+        height: 14px;
+        width: 14px;
+        margin-top: -7px;
+        background: #f2792a;
+        left: 0px;
+        top: 50%; }
+    .news-detail .content-editor .title-circle {
+      position: relative;
+      padding-left: 25px; }
+      .news-detail .content-editor .title-circle:before {
+        content: '';
+        position: absolute;
+        height: 14px;
+        width: 14px;
+        margin-top: -7px;
+        background: #f2792a;
+        -webkit-border-radius: 50%;
+        -khtml-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        left: 0px;
+        top: 50%; }
+    .news-detail .content-editor .color-orange {
+      color: #f2792a; }
+    .news-detail .content-editor .color-blue {
+      color: #2a354c; }
+    .news-detail .content-editor .center {
+      text-align: center; }
+    .news-detail .content-editor .left {
+      text-align: left; }
+    .news-detail .content-editor .right {
+      text-align: right; }
+    .news-detail .content-editor img-100 {
+      width: 100%; }
+    .news-detail .content-editor img-50 {
+      width: 50%; }
+    .news-detail .content-editor .list-normal li {
+      list-style: none; }
+    .news-detail .content-editor .list-pl-20 {
+      padding-left: 20px; }
+    .news-detail .content-editor .list-pl-40 {
+      padding-left: 20px; }
+    .news-detail .content-editor .list-pl-60 {
+      padding-left: 20px; }
   .news-detail .new-related {
     padding: 50px 0px; }
     .news-detail .new-related .equal-height {
