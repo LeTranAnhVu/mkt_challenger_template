@@ -833,53 +833,75 @@ img {
     display: flex;
     align-items: center; }
     .footer-content .info {
-      width: 70%;
+      width: 80%;
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding-right: 50px; }
+      justify-content: space-between; }
       .footer-content .info img {
         width: 100px;
-        margin: 6px 0px; }
+        margin: 10px 0px; }
       .footer-content .info a {
         font-size: 14px;
         font-weight: 800;
-        color: #ffffff; }
+        color: #ffffff;
+        margin: 2px 0px; }
+      .footer-content .info p {
+        font-size: 14px;
+        font-weight: 600;
+        color: #ffffff;
+        padding: 0px 20px; }
+      .footer-content .info-link {
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        margin-right: 60px; }
     .footer-content .social {
-      width: 30%;
+      width: 20%;
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-left: 140px; }
+      padding-left: 15px; }
 
 @media only screen and (max-width: 992px) {
-  .footer-content {
-    flex-direction: column; }
-    .footer-content .info {
-      width: 100%;
-      padding-right: 0px; }
-      .footer-content .info img {
-        width: 100px;
-        margin: 6px 0px; }
-      .footer-content .info a {
-        font-size: 14px;
-        font-weight: 800;
-        color: #ffffff; }
-    .footer-content .social {
-      display: inline-block;
-      width: 300px;
-      margin: auto;
-      padding-left: 0px;
-      text-align: center;
-      margin-bottom: 20px; }
-      .footer-content .social a {
-        margin: 0px 5px; } }
+  .footer {
+    padding: 10px 0px; }
+    .footer-content {
+      flex-direction: column; }
+      .footer-content .info {
+        width: 100%;
+        padding-right: 0px;
+        flex-direction: column;
+        text-align: center; }
+        .footer-content .info img {
+          width: 100px;
+          margin: 6px 0px; }
+        .footer-content .info a {
+          font-size: 14px;
+          font-weight: 800;
+          color: #ffffff; }
+        .footer-content .info p {
+          margin-bottom: 5px; }
+        .footer-content .info .info-link {
+          margin: 0px; }
+          .footer-content .info .info-link a {
+            margin-bottom: 5px; }
+      .footer-content .social {
+        display: inline-block;
+        width: 300px;
+        margin: auto;
+        padding-left: 0px;
+        text-align: center;
+        margin-bottom: 20px; }
+        .footer-content .social a {
+          margin: 0px 5px; } }
 
 @media only screen and (max-width: 768px) {
   .footer-content .info {
@@ -921,22 +943,22 @@ img {
 .loading-page {
   opacity: 1;
   visibility: visible;
-  -webkit-animation: animate-hidden-loading 1s ease forwards 3.3s;
-  -khtml-animation: animate-hidden-loading 1s ease forwards 3.3s;
-  -moz-animation: animate-hidden-loading 1s ease forwards 3.3s;
-  -ms-animation: animate-hidden-loading 1s ease forwards 3.3s;
-  -o-animation: animate-hidden-loading 1s ease forwards 3.3s;
-  animation: animate-hidden-loading 1s ease forwards 3.3s; }
+  -webkit-animation: animate-hidden-loading 1s ease forwards 2.3s;
+  -khtml-animation: animate-hidden-loading 1s ease forwards 2.3s;
+  -moz-animation: animate-hidden-loading 1s ease forwards 2.3s;
+  -ms-animation: animate-hidden-loading 1s ease forwards 2.3s;
+  -o-animation: animate-hidden-loading 1s ease forwards 2.3s;
+  animation: animate-hidden-loading 1s ease forwards 2.3s; }
   .loading-page svg {
     fill: transparent;
     width: 700px;
     padding: 0px 20px;
-    -webkit-animation: animate-fill-svg 0.5s ease forwards 2.5s, animate-hidden-svg 1s ease forwards 2.8s;
-    -khtml-animation: animate-fill-svg 0.5s ease forwards 2.5s, animate-hidden-svg 1s ease forwards 2.8s;
-    -moz-animation: animate-fill-svg 0.5s ease forwards 2.5s, animate-hidden-svg 1s ease forwards 2.8s;
-    -ms-animation: animate-fill-svg 0.5s ease forwards 2.5s, animate-hidden-svg 1s ease forwards 2.8s;
-    -o-animation: animate-fill-svg 0.5s ease forwards 2.5s, animate-hidden-svg 1s ease forwards 2.8s;
-    animation: animate-fill-svg 0.5s ease forwards 2.5s, animate-hidden-svg 1s ease forwards 2.8s; }
+    -webkit-animation: animate-fill-svg 0.5s ease forwards 1.5s, animate-hidden-svg 1s ease forwards 1.7s;
+    -khtml-animation: animate-fill-svg 0.5s ease forwards 1.5s, animate-hidden-svg 1s ease forwards 1.7s;
+    -moz-animation: animate-fill-svg 0.5s ease forwards 1.5s, animate-hidden-svg 1s ease forwards 1.7s;
+    -ms-animation: animate-fill-svg 0.5s ease forwards 1.5s, animate-hidden-svg 1s ease forwards 1.7s;
+    -o-animation: animate-fill-svg 0.5s ease forwards 1.5s, animate-hidden-svg 1s ease forwards 1.7s;
+    animation: animate-fill-svg 0.5s ease forwards 1.5s, animate-hidden-svg 1s ease forwards 1.7s; }
     .loading-page svg path {
       stroke: #ffffff;
       stroke-width: 3px;
@@ -953,75 +975,75 @@ img {
       .loading-page svg path:nth-child(2) {
         stroke-dasharray: 373;
         stroke-dashoffset: 373;
+        -webkit-animation: animate-path-line 0.8s ease forwards 0.1s;
+        -khtml-animation: animate-path-line 0.8s ease forwards 0.1s;
+        -moz-animation: animate-path-line 0.8s ease forwards 0.1s;
+        -ms-animation: animate-path-line 0.8s ease forwards 0.1s;
+        -o-animation: animate-path-line 0.8s ease forwards 0.1s;
+        animation: animate-path-line 0.8s ease forwards 0.1s; }
+      .loading-page svg path:nth-child(3) {
+        stroke-dasharray: 393;
+        stroke-dashoffset: 393;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.2s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.2s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.2s;
         -ms-animation: animate-path-line 0.8s ease forwards 0.2s;
         -o-animation: animate-path-line 0.8s ease forwards 0.2s;
         animation: animate-path-line 0.8s ease forwards 0.2s; }
-      .loading-page svg path:nth-child(3) {
-        stroke-dasharray: 393;
-        stroke-dashoffset: 393;
+      .loading-page svg path:nth-child(4) {
+        stroke-dasharray: 416;
+        stroke-dashoffset: 416;
+        -webkit-animation: animate-path-line 0.8s ease forwards 0.3s;
+        -khtml-animation: animate-path-line 0.8s ease forwards 0.3s;
+        -moz-animation: animate-path-line 0.8s ease forwards 0.3s;
+        -ms-animation: animate-path-line 0.8s ease forwards 0.3s;
+        -o-animation: animate-path-line 0.8s ease forwards 0.3s;
+        animation: animate-path-line 0.8s ease forwards 0.3s; }
+      .loading-page svg path:nth-child(5) {
+        stroke-dasharray: 371;
+        stroke-dashoffset: 371;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.4s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.4s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.4s;
         -ms-animation: animate-path-line 0.8s ease forwards 0.4s;
         -o-animation: animate-path-line 0.8s ease forwards 0.4s;
         animation: animate-path-line 0.8s ease forwards 0.4s; }
-      .loading-page svg path:nth-child(4) {
-        stroke-dasharray: 416;
-        stroke-dashoffset: 416;
+      .loading-page svg path:nth-child(6) {
+        stroke-dasharray: 282;
+        stroke-dashoffset: 282;
+        -webkit-animation: animate-path-line 0.8s ease forwards 0.5s;
+        -khtml-animation: animate-path-line 0.8s ease forwards 0.5s;
+        -moz-animation: animate-path-line 0.8s ease forwards 0.5s;
+        -ms-animation: animate-path-line 0.8s ease forwards 0.5s;
+        -o-animation: animate-path-line 0.8s ease forwards 0.5s;
+        animation: animate-path-line 0.8s ease forwards 0.5s; }
+      .loading-page svg path:nth-child(7) {
+        stroke-dasharray: 216;
+        stroke-dashoffset: 216;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.6s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.6s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.6s;
         -ms-animation: animate-path-line 0.8s ease forwards 0.6s;
         -o-animation: animate-path-line 0.8s ease forwards 0.6s;
         animation: animate-path-line 0.8s ease forwards 0.6s; }
-      .loading-page svg path:nth-child(5) {
-        stroke-dasharray: 371;
-        stroke-dashoffset: 371;
+      .loading-page svg path:nth-child(8) {
+        stroke-dasharray: 372;
+        stroke-dashoffset: 372;
+        -webkit-animation: animate-path-line 0.8s ease forwards 0.7s;
+        -khtml-animation: animate-path-line 0.8s ease forwards 0.7s;
+        -moz-animation: animate-path-line 0.8s ease forwards 0.7s;
+        -ms-animation: animate-path-line 0.8s ease forwards 0.7s;
+        -o-animation: animate-path-line 0.8s ease forwards 0.7s;
+        animation: animate-path-line 0.8s ease forwards 0.7s; }
+      .loading-page svg path:nth-child(9) {
+        stroke-dasharray: 367;
+        stroke-dashoffset: 367;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.8s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.8s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.8s;
         -ms-animation: animate-path-line 0.8s ease forwards 0.8s;
         -o-animation: animate-path-line 0.8s ease forwards 0.8s;
         animation: animate-path-line 0.8s ease forwards 0.8s; }
-      .loading-page svg path:nth-child(6) {
-        stroke-dasharray: 282;
-        stroke-dashoffset: 282;
-        -webkit-animation: animate-path-line 0.8s ease forwards 1s;
-        -khtml-animation: animate-path-line 0.8s ease forwards 1s;
-        -moz-animation: animate-path-line 0.8s ease forwards 1s;
-        -ms-animation: animate-path-line 0.8s ease forwards 1s;
-        -o-animation: animate-path-line 0.8s ease forwards 1s;
-        animation: animate-path-line 0.8s ease forwards 1s; }
-      .loading-page svg path:nth-child(7) {
-        stroke-dasharray: 216;
-        stroke-dashoffset: 216;
-        -webkit-animation: animate-path-line 0.8s ease forwards 1.2s;
-        -khtml-animation: animate-path-line 0.8s ease forwards 1.2s;
-        -moz-animation: animate-path-line 0.8s ease forwards 1.2s;
-        -ms-animation: animate-path-line 0.8s ease forwards 1.2s;
-        -o-animation: animate-path-line 0.8s ease forwards 1.2s;
-        animation: animate-path-line 0.8s ease forwards 1.2s; }
-      .loading-page svg path:nth-child(8) {
-        stroke-dasharray: 372;
-        stroke-dashoffset: 372;
-        -webkit-animation: animate-path-line 0.8s ease forwards 1.4s;
-        -khtml-animation: animate-path-line 0.8s ease forwards 1.4s;
-        -moz-animation: animate-path-line 0.8s ease forwards 1.4s;
-        -ms-animation: animate-path-line 0.8s ease forwards 1.4s;
-        -o-animation: animate-path-line 0.8s ease forwards 1.4s;
-        animation: animate-path-line 0.8s ease forwards 1.4s; }
-      .loading-page svg path:nth-child(9) {
-        stroke-dasharray: 367;
-        stroke-dashoffset: 367;
-        -webkit-animation: animate-path-line 0.8s ease forwards 1.6s;
-        -khtml-animation: animate-path-line 0.8s ease forwards 1.6s;
-        -moz-animation: animate-path-line 0.8s ease forwards 1.6s;
-        -ms-animation: animate-path-line 0.8s ease forwards 1.6s;
-        -o-animation: animate-path-line 0.8s ease forwards 1.6s;
-        animation: animate-path-line 0.8s ease forwards 1.6s; }
       .loading-page svg path:nth-child(10) {
         stroke-dasharray: 305;
         stroke-dashoffset: 305;
@@ -1034,93 +1056,93 @@ img {
       .loading-page svg path:nth-child(11) {
         stroke-dasharray: 425;
         stroke-dashoffset: 425;
+        -webkit-animation: animate-path-line 0.8s ease forwards 0.1s;
+        -khtml-animation: animate-path-line 0.8s ease forwards 0.1s;
+        -moz-animation: animate-path-line 0.8s ease forwards 0.1s;
+        -ms-animation: animate-path-line 0.8s ease forwards 0.1s;
+        -o-animation: animate-path-line 0.8s ease forwards 0.1s;
+        animation: animate-path-line 0.8s ease forwards 0.1s; }
+      .loading-page svg path:nth-child(12) {
+        stroke-dasharray: 373;
+        stroke-dashoffset: 373;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.2s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.2s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.2s;
         -ms-animation: animate-path-line 0.8s ease forwards 0.2s;
         -o-animation: animate-path-line 0.8s ease forwards 0.2s;
         animation: animate-path-line 0.8s ease forwards 0.2s; }
-      .loading-page svg path:nth-child(12) {
-        stroke-dasharray: 373;
-        stroke-dashoffset: 373;
+      .loading-page svg path:nth-child(13) {
+        stroke-dasharray: 273;
+        stroke-dashoffset: 273;
+        -webkit-animation: animate-path-line 0.8s ease forwards 0.3s;
+        -khtml-animation: animate-path-line 0.8s ease forwards 0.3s;
+        -moz-animation: animate-path-line 0.8s ease forwards 0.3s;
+        -ms-animation: animate-path-line 0.8s ease forwards 0.3s;
+        -o-animation: animate-path-line 0.8s ease forwards 0.3s;
+        animation: animate-path-line 0.8s ease forwards 0.3s; }
+      .loading-page svg path:nth-child(14) {
+        stroke-dasharray: 273;
+        stroke-dashoffset: 273;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.4s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.4s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.4s;
         -ms-animation: animate-path-line 0.8s ease forwards 0.4s;
         -o-animation: animate-path-line 0.8s ease forwards 0.4s;
         animation: animate-path-line 0.8s ease forwards 0.4s; }
-      .loading-page svg path:nth-child(13) {
-        stroke-dasharray: 273;
-        stroke-dashoffset: 273;
+      .loading-page svg path:nth-child(15) {
+        stroke-dasharray: 371;
+        stroke-dashoffset: 371;
+        -webkit-animation: animate-path-line 0.8s ease forwards 0.5s;
+        -khtml-animation: animate-path-line 0.8s ease forwards 0.5s;
+        -moz-animation: animate-path-line 0.8s ease forwards 0.5s;
+        -ms-animation: animate-path-line 0.8s ease forwards 0.5s;
+        -o-animation: animate-path-line 0.8s ease forwards 0.5s;
+        animation: animate-path-line 0.8s ease forwards 0.5s; }
+      .loading-page svg path:nth-child(16) {
+        stroke-dasharray: 372;
+        stroke-dashoffset: 372;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.6s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.6s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.6s;
         -ms-animation: animate-path-line 0.8s ease forwards 0.6s;
         -o-animation: animate-path-line 0.8s ease forwards 0.6s;
         animation: animate-path-line 0.8s ease forwards 0.6s; }
-      .loading-page svg path:nth-child(14) {
-        stroke-dasharray: 273;
-        stroke-dashoffset: 273;
+      .loading-page svg path:nth-child(17) {
+        stroke-dasharray: 367;
+        stroke-dashoffset: 367;
+        -webkit-animation: animate-path-line 0.8s ease forwards 0.7s;
+        -khtml-animation: animate-path-line 0.8s ease forwards 0.7s;
+        -moz-animation: animate-path-line 0.8s ease forwards 0.7s;
+        -ms-animation: animate-path-line 0.8s ease forwards 0.7s;
+        -o-animation: animate-path-line 0.8s ease forwards 0.7s;
+        animation: animate-path-line 0.8s ease forwards 0.7s; }
+      .loading-page svg path:nth-child(18) {
+        stroke-dasharray: 371;
+        stroke-dashoffset: 371;
         -webkit-animation: animate-path-line 0.8s ease forwards 0.8s;
         -khtml-animation: animate-path-line 0.8s ease forwards 0.8s;
         -moz-animation: animate-path-line 0.8s ease forwards 0.8s;
         -ms-animation: animate-path-line 0.8s ease forwards 0.8s;
         -o-animation: animate-path-line 0.8s ease forwards 0.8s;
         animation: animate-path-line 0.8s ease forwards 0.8s; }
-      .loading-page svg path:nth-child(15) {
-        stroke-dasharray: 371;
-        stroke-dashoffset: 371;
+      .loading-page svg path:nth-child(19) {
+        stroke-dasharray: 393;
+        stroke-dashoffset: 393;
+        -webkit-animation: animate-path-line 0.8s ease forwards 0.9s;
+        -khtml-animation: animate-path-line 0.8s ease forwards 0.9s;
+        -moz-animation: animate-path-line 0.8s ease forwards 0.9s;
+        -ms-animation: animate-path-line 0.8s ease forwards 0.9s;
+        -o-animation: animate-path-line 0.8s ease forwards 0.9s;
+        animation: animate-path-line 0.8s ease forwards 0.9s; }
+      .loading-page svg path:nth-child(20) {
+        stroke-dasharray: 370;
+        stroke-dashoffset: 370;
         -webkit-animation: animate-path-line 0.8s ease forwards 1s;
         -khtml-animation: animate-path-line 0.8s ease forwards 1s;
         -moz-animation: animate-path-line 0.8s ease forwards 1s;
         -ms-animation: animate-path-line 0.8s ease forwards 1s;
         -o-animation: animate-path-line 0.8s ease forwards 1s;
         animation: animate-path-line 0.8s ease forwards 1s; }
-      .loading-page svg path:nth-child(16) {
-        stroke-dasharray: 372;
-        stroke-dashoffset: 372;
-        -webkit-animation: animate-path-line 0.8s ease forwards 1.2s;
-        -khtml-animation: animate-path-line 0.8s ease forwards 1.2s;
-        -moz-animation: animate-path-line 0.8s ease forwards 1.2s;
-        -ms-animation: animate-path-line 0.8s ease forwards 1.2s;
-        -o-animation: animate-path-line 0.8s ease forwards 1.2s;
-        animation: animate-path-line 0.8s ease forwards 1.2s; }
-      .loading-page svg path:nth-child(17) {
-        stroke-dasharray: 367;
-        stroke-dashoffset: 367;
-        -webkit-animation: animate-path-line 0.8s ease forwards 1.4s;
-        -khtml-animation: animate-path-line 0.8s ease forwards 1.4s;
-        -moz-animation: animate-path-line 0.8s ease forwards 1.4s;
-        -ms-animation: animate-path-line 0.8s ease forwards 1.4s;
-        -o-animation: animate-path-line 0.8s ease forwards 1.4s;
-        animation: animate-path-line 0.8s ease forwards 1.4s; }
-      .loading-page svg path:nth-child(18) {
-        stroke-dasharray: 371;
-        stroke-dashoffset: 371;
-        -webkit-animation: animate-path-line 0.8s ease forwards 1.6s;
-        -khtml-animation: animate-path-line 0.8s ease forwards 1.6s;
-        -moz-animation: animate-path-line 0.8s ease forwards 1.6s;
-        -ms-animation: animate-path-line 0.8s ease forwards 1.6s;
-        -o-animation: animate-path-line 0.8s ease forwards 1.6s;
-        animation: animate-path-line 0.8s ease forwards 1.6s; }
-      .loading-page svg path:nth-child(19) {
-        stroke-dasharray: 393;
-        stroke-dashoffset: 393;
-        -webkit-animation: animate-path-line 0.8s ease forwards 1.8s;
-        -khtml-animation: animate-path-line 0.8s ease forwards 1.8s;
-        -moz-animation: animate-path-line 0.8s ease forwards 1.8s;
-        -ms-animation: animate-path-line 0.8s ease forwards 1.8s;
-        -o-animation: animate-path-line 0.8s ease forwards 1.8s;
-        animation: animate-path-line 0.8s ease forwards 1.8s; }
-      .loading-page svg path:nth-child(20) {
-        stroke-dasharray: 370;
-        stroke-dashoffset: 370;
-        -webkit-animation: animate-path-line 0.8s ease forwards 2s;
-        -khtml-animation: animate-path-line 0.8s ease forwards 2s;
-        -moz-animation: animate-path-line 0.8s ease forwards 2s;
-        -ms-animation: animate-path-line 0.8s ease forwards 2s;
-        -o-animation: animate-path-line 0.8s ease forwards 2s;
-        animation: animate-path-line 0.8s ease forwards 2s; }
 
 #home-page {
   overflow: hidden; }
@@ -1404,7 +1426,7 @@ img {
       content: "";
       position: absolute;
       z-index: 4;
-      top: 55px;
+      top: 75px;
       bottom: 100px;
       left: 50%;
       width: 2px;
@@ -1422,6 +1444,13 @@ img {
       display: flex;
       justify-content: flex-end;
       margin-bottom: 34px; }
+      .banner-contest ul li a {
+        -webkit-transition: all 0.3s;
+        -khtml-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
       .banner-contest ul li:before {
         content: '';
         position: absolute;
@@ -1465,7 +1494,8 @@ img {
         border-top: 1px solid #bfbfbf;
         width: 250px; }
         .banner-contest ul li .item h4 {
-          font-size: 20px;
+          font-size: 18px;
+          line-height: 25px;
           font-weight: 800;
           color: #f2792a;
           margin-bottom: 10px; }
@@ -1475,6 +1505,13 @@ img {
           color: #ffffff; }
       .banner-contest ul li:hover::after {
         background: #f2792a; }
+      .banner-contest ul li:hover a {
+        -webkit-transform: translateY(-15px);
+        -khtml-transform: translateY(-15px);
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -o-transform: translateY(-15px);
+        transform: translateY(-15px); }
       .banner-contest ul li:nth-child(odd) {
         float: left; }
         .banner-contest ul li:nth-child(odd):before {
@@ -2130,7 +2167,20 @@ img {
           font-size: 36px;
           font-weight: 800;
           color: #f2792a;
-          margin-bottom: 12px; }
+          margin-bottom: 12px;
+          -webkit-transition: all 0.3s;
+          -khtml-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s; }
+          .news-big .overlay-content a:hover {
+            -webkit-transform: translateY(-10px);
+            -khtml-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
+            transform: translateY(-10px); }
         .news-big .overlay-content p {
           font-size: 14px;
           font-weight: 800;
@@ -2329,6 +2379,20 @@ img {
   background-position: top;
   margin-top: -140px;
   overflow: hidden; }
+  .about-transition .arrow-down {
+    position: absolute;
+    z-index: 30;
+    bottom: 110px;
+    left: 50%;
+    margin-left: -23px;
+    -webkit-animation: animate-mouse-scroll 2s linear infinite;
+    -khtml-animation: animate-mouse-scroll 2s linear infinite;
+    -moz-animation: animate-mouse-scroll 2s linear infinite;
+    -ms-animation: animate-mouse-scroll 2s linear infinite;
+    -o-animation: animate-mouse-scroll 2s linear infinite;
+    animation: animate-mouse-scroll 2s linear infinite; }
+    .about-transition .arrow-down img {
+      width: 45px; }
   .about-transition .title-transition {
     padding-top: 200px; }
     .about-transition .title-transition h3 {
@@ -2357,14 +2421,24 @@ img {
           .about-transition .about-content li p b {
             font-weight: 900; }
 
-@media only screen and (max-width: 1368px) {
+@media only screen and (max-width: 1440px) {
   .about-transition {
     background-size: cover;
     background-position: center center;
     margin-top: -110px; }
-    .about-transition .title-transition {
-      padding-top: 160px;
-      margin-bottom: 10px; } }
+    .about-transition .arrow-down {
+      bottom: 120px; } }
+
+@media only screen and (max-width: 1368px) {
+  .about-transition .arrow-down {
+    bottom: 90px; }
+  .about-transition .title-transition {
+    padding-top: 160px;
+    margin-bottom: 10px; } }
+
+@media only screen and (max-width: 1200px) {
+  .about-transition .arrow-down {
+    bottom: 0px; } }
 
 @media only screen and (max-width: 992px) {
   .about-transition {
@@ -2372,6 +2446,11 @@ img {
     background-size: cover;
     background-position: center center;
     margin-top: 0px; }
+    .about-transition .arrow-down {
+      bottom: 5px;
+      margin-left: -15px; }
+      .about-transition .arrow-down img {
+        width: 30px; }
     .about-transition .title-transition {
       padding-top: 50px; }
     .about-transition .about-content {
@@ -2381,7 +2460,9 @@ img {
   .about-transition .about-content {
     width: 100%;
     margin-top: 25px;
-    padding-left: 0px; } }
+    padding-left: 0px; }
+  .about-transition .about-image {
+    padding-bottom: 30px; } }
 
 @media only screen and (max-width: 576px) {
   .about-transition .title-transition h3 {
@@ -3122,6 +3203,14 @@ img {
       font-weight: bold;
       padding: 10px 0px;
       border-bottom: 2px solid #2a354c; }
+    .rounds .tab-content .submit-round {
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-block;
+      background: #f2792a;
+      color: #ffffff;
+      padding: 8px 20px;
+      margin: 0px 20px 40px; }
     .rounds .tab-content .content {
       padding: 20px;
       min-height: 470px; }

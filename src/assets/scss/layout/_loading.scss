@@ -15,12 +15,12 @@
 .loading-page {
   opacity: 1;
   visibility: visible;
-  @include animation(animate-hidden-loading 1s ease forwards 3.3s);
+  @include animation(animate-hidden-loading 1s ease forwards 2.3s);
   svg {
     fill: transparent;
     width: 700px;
     padding: 0px 20px;
-    @include animation((animate-fill-svg 0.5s ease forwards 2.5s, animate-hidden-svg 1s ease forwards 2.8s));
+    @include animation((animate-fill-svg 0.5s ease forwards 1.5s, animate-hidden-svg 1s ease forwards 1.7s));
     path {
       stroke: #ffffff;
       stroke-width: 3px;
@@ -33,42 +33,42 @@
       &:nth-child(2) {
         stroke-dasharray: 373;
         stroke-dashoffset: 373;
-        @include animation(animate-path-line 0.8s ease forwards 0.2s);
+        @include animation(animate-path-line 0.8s ease forwards 0.1s);
       }
       &:nth-child(3) {
         stroke-dasharray: 393;
         stroke-dashoffset: 393;
-        @include animation(animate-path-line 0.8s ease forwards 0.4s);
+        @include animation(animate-path-line 0.8s ease forwards 0.2s);
       }
       &:nth-child(4) {
         stroke-dasharray: 416;
         stroke-dashoffset: 416;
-        @include animation(animate-path-line 0.8s ease forwards 0.6s);
+        @include animation(animate-path-line 0.8s ease forwards 0.3s);
       }
       &:nth-child(5) {
         stroke-dasharray: 371;
         stroke-dashoffset: 371;
-        @include animation(animate-path-line 0.8s ease forwards 0.8s);
+        @include animation(animate-path-line 0.8s ease forwards 0.4s);
       }
       &:nth-child(6) {
         stroke-dasharray: 282;
         stroke-dashoffset: 282;
-        @include animation(animate-path-line 0.8s ease forwards 1s);
+        @include animation(animate-path-line 0.8s ease forwards 0.5s);
       }
       &:nth-child(7) {
         stroke-dasharray: 216;
         stroke-dashoffset: 216;
-        @include animation(animate-path-line 0.8s ease forwards 1.2s);
+        @include animation(animate-path-line 0.8s ease forwards 0.6s);
       }
       &:nth-child(8) {
         stroke-dasharray: 372;
         stroke-dashoffset: 372;
-        @include animation(animate-path-line 0.8s ease forwards 1.4s);
+        @include animation(animate-path-line 0.8s ease forwards 0.7s);
       }
       &:nth-child(9) {
         stroke-dasharray: 367;
         stroke-dashoffset: 367;
-        @include animation(animate-path-line 0.8s ease forwards 1.6s);
+        @include animation(animate-path-line 0.8s ease forwards 0.8s);
       }
       &:nth-child(10) {
         stroke-dasharray: 305;
@@ -78,52 +78,52 @@
       &:nth-child(11) {
         stroke-dasharray: 425;
         stroke-dashoffset: 425;
-        @include animation(animate-path-line 0.8s ease forwards 0.2s);
+        @include animation(animate-path-line 0.8s ease forwards 0.1s);
       }
       &:nth-child(12) {
         stroke-dasharray: 373;
         stroke-dashoffset: 373;
-        @include animation(animate-path-line 0.8s ease forwards 0.4s);
+        @include animation(animate-path-line 0.8s ease forwards 0.2s);
       }
       &:nth-child(13) {
         stroke-dasharray: 273;
         stroke-dashoffset: 273;
-        @include animation(animate-path-line 0.8s ease forwards 0.6s);
+        @include animation(animate-path-line 0.8s ease forwards 0.3s);
       }
       &:nth-child(14) {
         stroke-dasharray: 273;
         stroke-dashoffset: 273;
-        @include animation(animate-path-line 0.8s ease forwards 0.8s);
+        @include animation(animate-path-line 0.8s ease forwards 0.4s);
       }
       &:nth-child(15) {
         stroke-dasharray: 371;
         stroke-dashoffset: 371;
-        @include animation(animate-path-line 0.8s ease forwards 1s);
+        @include animation(animate-path-line 0.8s ease forwards 0.5s);
       }
       &:nth-child(16) {
         stroke-dasharray: 372;
         stroke-dashoffset: 372;
-        @include animation(animate-path-line 0.8s ease forwards 1.2s);
+        @include animation(animate-path-line 0.8s ease forwards 0.6s);
       }
       &:nth-child(17) {
         stroke-dasharray: 367;
         stroke-dashoffset: 367;
-        @include animation(animate-path-line 0.8s ease forwards 1.4s);
+        @include animation(animate-path-line 0.8s ease forwards 0.7s);
       }
       &:nth-child(18) {
         stroke-dasharray: 371;
         stroke-dashoffset: 371;
-        @include animation(animate-path-line 0.8s ease forwards 1.6s);
+        @include animation(animate-path-line 0.8s ease forwards 0.8s);
       }
       &:nth-child(19) {
         stroke-dasharray: 393;
         stroke-dashoffset: 393;
-        @include animation(animate-path-line 0.8s ease forwards 1.8s);
+        @include animation(animate-path-line 0.8s ease forwards 0.9s);
       }
       &:nth-child(20) {
         stroke-dasharray: 370;
         stroke-dashoffset: 370;
-        @include animation(animate-path-line 0.8s ease forwards 2s);
+        @include animation(animate-path-line 0.8s ease forwards 1s);
       }
     }
   }

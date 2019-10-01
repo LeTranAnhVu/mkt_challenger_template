@@ -4,38 +4,52 @@
     @include flex;
     align-items: center;
     .info {
-      width: 70%;
+      width: 80%;
       @include flex;
       align-items: center;
       justify-content: space-between;
-      padding-right: 50px;
       img {
         width: 100px;
-        margin: 6px 0px;
+        margin: 10px 0px;
       }
       a {
         font-size: 14px;
         font-weight: 800;
         color: #ffffff;
+        margin: 2px 0px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        color: #ffffff;
+        padding: 0px 20px;
+      }
+      &-link {
+        @include flex;
+        flex-direction: column;
+        margin-right: 60px;
       }
     }
     .social {
-      width: 30%;
+      width: 20%;
       @include flex;
       justify-content: space-between;
       align-items: center;
-      padding-left: 140px;
+      padding-left: 15px;
     }
   }
 }
 //----------Responsive Footer----------
 @media #{$info-ipad-pro} {
   .footer {
+    padding: 10px 0px;
     &-content {
       flex-direction: column;
       .info {
         width: 100%;
         padding-right: 0px;
+        flex-direction: column;
+        text-align: center;
         img {
           width: 100px;
           margin: 6px 0px;
@@ -44,6 +58,15 @@
           font-size: 14px;
           font-weight: 800;
           color: #ffffff;
+        }
+        p {
+          margin-bottom: 5px;
+        }
+        .info-link {
+          margin: 0px;
+          a {
+            margin-bottom: 5px;
+          }
         }
       }
       .social {

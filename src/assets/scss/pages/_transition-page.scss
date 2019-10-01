@@ -4,6 +4,18 @@
   background-position: top;
   margin-top: -140px;
   overflow: hidden;
+  //arrow-down
+  .arrow-down {
+    position: absolute;
+    z-index: 30;
+    bottom: 110px;
+    left: 50%;
+    margin-left: -23px;
+    @include animation(animate-mouse-scroll 2s linear infinite);
+    img {
+      width: 45px;
+    }
+  }
   //Title transition
   .title-transition {
     padding-top: 200px;
@@ -44,15 +56,34 @@
   }
 }
 
-@media #{$info-laptop-normal} {
+@media #{$info-laptop-medium} {
   .about-transition {
     background-size: cover;
     background-position: center center;
     margin-top: -110px;
+    .arrow-down {
+      bottom: 120px;
+    }
+  }
+}
+
+@media #{$info-laptop-normal} {
+  .about-transition {
+    .arrow-down {
+      bottom: 90px;
+    }
     //Title transition
     .title-transition {
       padding-top: 160px;
       margin-bottom: 10px;
+    }
+  }
+}
+
+@media #{$info-laptop-smallest} {
+  .about-transition {
+    .arrow-down {
+      bottom: 0px;
     }
   }
 }
@@ -63,6 +94,13 @@
     background-size: cover;
     background-position: center center;
     margin-top: 0px;
+    .arrow-down {
+      bottom: 5px;
+      margin-left: -15px;
+      img {
+        width: 30px;
+      }
+    }
     //Title transition
     .title-transition {
       padding-top: 50px;
@@ -84,6 +122,9 @@
         width: 100%;
         margin-top: 25px;
         padding-left: 0px;
+      }
+      &-image {
+        padding-bottom: 30px;
       }
     }
   }
