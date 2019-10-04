@@ -1841,11 +1841,31 @@ img {
         justify-content: center;
         align-items: center;
         text-align: center; }
-      .sponsors-logo .logo-season .content h4 {
-        font-size: 18px;
-        font-weight: 800;
-        color: #2a354c;
-        margin-bottom: 15px; }
+      .sponsors-logo .logo-season .content .item {
+        margin-bottom: 40px; }
+        .sponsors-logo .logo-season .content .item h4 {
+          font-size: 18px;
+          font-weight: 800;
+          color: #2a354c;
+          margin-bottom: 15px; }
+        .sponsors-logo .logo-season .content .item .content-logo {
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap; }
+          .sponsors-logo .logo-season .content .item .content-logo .image {
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            width: 33.33333%;
+            padding: 0px 30px;
+            margin-bottom: 40px; }
+            .sponsors-logo .logo-season .content .item .content-logo .image img {
+              width: 100%; }
       .sponsors-logo .logo-season:nth-child(5) .item {
         margin-bottom: 40px; }
         .sponsors-logo .logo-season:nth-child(5) .item:last-child {

@@ -747,12 +747,31 @@
         text-align: center;
       }
       .content {
-        h4 {
-          font-size: 18px;
-          font-weight: 800;
-          color: #2a354c;
-          margin-bottom: 15px;
+        .item {
+          margin-bottom: 40px;
+          h4 {
+            font-size: 18px;
+            font-weight: 800;
+            color: #2a354c;
+            margin-bottom: 15px;
+          }
+          .content-logo {
+            @include flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .image {
+              @include flex;
+              align-items: center;
+              width: 33.33333%;
+              padding: 0px 30px;
+              margin-bottom: 40px;
+              img {
+                width: 100%;
+              }
+            }
+          }
         }
+
       }
       &:nth-child(5) {
         .item {
