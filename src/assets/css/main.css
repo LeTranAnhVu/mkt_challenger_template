@@ -2289,7 +2289,8 @@ img {
 .news-title-special {
   position: relative; }
   .news-title-special .title-common {
-    margin: 200px 0px 60px; }
+    margin: 200px 0px 60px;
+    display: inline-block; }
 
 @media only screen and (max-width: 992px) {
   .news-big img {
