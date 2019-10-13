@@ -1365,6 +1365,7 @@
 //----------News----------
 .news {
   position: relative;
+  z-index: 3;
   //New big
   &-big {
     position: relative;

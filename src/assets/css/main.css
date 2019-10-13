@@ -2308,7 +2308,8 @@ img {
     height: 110px; } }
 
 .news {
-  position: relative; }
+  position: relative;
+  z-index: 3; }
   .news-big {
     position: relative; }
     .news-big:before {
