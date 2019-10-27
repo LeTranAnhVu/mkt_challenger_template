@@ -418,7 +418,10 @@
   }
   //Button apply now
   .apply-contest {
-    text-align: center;
+    @include flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .btn-apply {
       position: relative;
       display: inline-block;
@@ -481,6 +484,10 @@
         p {
           color: #ffffff;
         }
+      }
+      //Last child
+      &:last-child {
+        margin-top: 0px;
       }
     }
   }
