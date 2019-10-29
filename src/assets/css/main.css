@@ -3437,6 +3437,9 @@ img {
           background: #2a354c; }
       .rounds .tab-content .content .text-space {
         padding-left: 20px; }
+        .rounds .tab-content .content .text-space li {
+          margin-left: 20px;
+          list-style: unset; }
       .rounds .tab-content .content .orange {
         color: #f2792a; }
       .rounds .tab-content .content .orange-bold {
@@ -3445,7 +3448,8 @@ img {
       .rounds .tab-content .content p {
         margin-bottom: 12px; }
         .rounds .tab-content .content p a {
-          font-weight: 600; }
+          font-weight: bold;
+          color: #000000; }
           .rounds .tab-content .content p a:hover {
             color: #2a354c; }
       .rounds .tab-content .content ul {
