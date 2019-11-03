@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
   <!--animate css-->
   <link rel="stylesheet" href="assets/css/vendor/animate.css">
+  <!--fancybox css-->
+  <link rel="stylesheet" href="assets/css/vendor/jquery.fancybox.min.css">
   <!--main css-->
   <link rel="stylesheet" href="assets/css/main.css">
 
@@ -82,23 +84,23 @@
   <!--Banner voting-->
   <div class="voting-banner">
     <div class="content">
-      <a data-toggle="modal" data-target="#team-01" class="item">
+      <a data-toggle="modal" href="#team-01" data-target="#team-01" class="item">
         <span class="item-image"></span>
         <span class="item-name">Gold Lions</span>
       </a>
-      <a href="#" class="item">
+      <a data-toggle="modal" href="#team-02" data-target="#team-02" class="item">
         <span class="item-image"></span>
         <span class="item-name">Silver Lions</span>
       </a>
-      <a href="#" class="item">
+      <a data-toggle="modal" href="#team-03" data-target="#team-03" class="item">
         <span class="item-image"></span>
         <span class="item-name">Bronze Lions</span>
       </a>
-      <a href="#" class="item">
+      <a data-toggle="modal" href="#team-04" data-target="#team-04" class="item">
         <span class="item-image"></span>
         <span class="item-name">Brass Lions</span>
       </a>
-      <a href="#" class="item">
+      <a data-toggle="modal" href="#team-05" data-target="#team-05" class="item">
         <span class="item-image"></span>
         <span class="item-name">Metal Lions</span>
       </a>
@@ -108,7 +110,7 @@
 
 <!-- The Modal -->
 <!-- Modal -->
-<div class="modal fade" id="team-01">
+<div class="modal modal-voting fade" id="team-01">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -118,13 +120,183 @@
         <div class="row align-items-center flex-column-reverse flex-lg-row">
           <div class="col-lg-5">
             <div class="image">
-              <img src="./assets/images/example.jpg" alt="exam">
+              <a data-fancybox="image-01" href="./assets/images/example.jpg" data-width="1000px">
+                <img src="./assets/images/example.jpg" alt="exam">
+              </a>
             </div>
           </div>
           <div class="col-lg-7">
             <div class="content mb-4 mb-lg-0">
               <div class="content-des">
-                <h3>Team Name</h3>
+                <h3>Team Name 1</h3>
+                <div class="action">
+                  <div class="btn btn-vote">
+                    <a href="#">
+                      <img src="./assets/images/icon-vote.png" alt="voting">
+                    </a>
+                    <span>Vote (125)</span>
+                  </div>
+                  <div class="btn btn-share">
+                    <a href="#">
+                      <img src="./assets/images/icon-share.png" alt="share">
+                    </a>
+                    <span>Share</span>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qlit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-voting fade" id="team-02">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        &times;
+      </button>
+      <div class="modal-body">
+        <div class="row align-items-center flex-column-reverse flex-lg-row">
+          <div class="col-lg-5">
+            <div class="image">
+              <a data-fancybox="image-02" href="./assets/images/example.jpg" data-width="1000px">
+                <img src="./assets/images/example.jpg" alt="exam">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="content mb-4 mb-lg-0">
+              <div class="content-des">
+                <h3>Team Name 2</h3>
+                <div class="action">
+                  <div class="btn btn-vote">
+                    <a href="#">
+                      <img src="./assets/images/icon-vote.png" alt="voting">
+                    </a>
+                    <span>Vote (125)</span>
+                  </div>
+                  <div class="btn btn-share">
+                    <a href="#">
+                      <img src="./assets/images/icon-share.png" alt="share">
+                    </a>
+                    <span>Share</span>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qlit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-voting fade" id="team-03">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        &times;
+      </button>
+      <div class="modal-body">
+        <div class="row align-items-center flex-column-reverse flex-lg-row">
+          <div class="col-lg-5">
+            <div class="image">
+              <a data-fancybox="image-03" href="./assets/images/example.jpg" data-width="1000px">
+                <img src="./assets/images/example.jpg" alt="exam">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="content mb-4 mb-lg-0">
+              <div class="content-des">
+                <h3>Team Name 3</h3>
+                <div class="action">
+                  <div class="btn btn-vote">
+                    <a href="#">
+                      <img src="./assets/images/icon-vote.png" alt="voting">
+                    </a>
+                    <span>Vote (125)</span>
+                  </div>
+                  <div class="btn btn-share">
+                    <a href="#">
+                      <img src="./assets/images/icon-share.png" alt="share">
+                    </a>
+                    <span>Share</span>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qlit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-voting fade" id="team-04">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        &times;
+      </button>
+      <div class="modal-body">
+        <div class="row align-items-center flex-column-reverse flex-lg-row">
+          <div class="col-lg-5">
+            <div class="image">
+              <a data-fancybox="image-04" href="./assets/images/example.jpg" data-width="1000px">
+                <img src="./assets/images/example.jpg" alt="exam">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="content mb-4 mb-lg-0">
+              <div class="content-des">
+                <h3>Team Name 4</h3>
+                <div class="action">
+                  <div class="btn btn-vote">
+                    <a href="#">
+                      <img src="./assets/images/icon-vote.png" alt="voting">
+                    </a>
+                    <span>Vote (125)</span>
+                  </div>
+                  <div class="btn btn-share">
+                    <a href="#">
+                      <img src="./assets/images/icon-share.png" alt="share">
+                    </a>
+                    <span>Share</span>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qlit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal-voting fade" id="team-05">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        &times;
+      </button>
+      <div class="modal-body">
+        <div class="row align-items-center flex-column-reverse flex-lg-row">
+          <div class="col-lg-5">
+            <div class="image">
+              <a data-fancybox="image-05" href="./assets/images/example.jpg" data-width="1000px">
+                <img src="./assets/images/example.jpg" alt="exam">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="content mb-4 mb-lg-0">
+              <div class="content-des">
+                <h3>Team Name 5</h3>
                 <div class="action">
                   <div class="btn btn-vote">
                     <a href="#">
@@ -177,6 +349,7 @@
 <script src="./assets/js/vendor/jquery-3.4.1.min.js"></script>
 <script src="./assets/js/vendor/bootstrap.min.js"></script>
 <script src="./assets/js/vendor/wow.min.js"></script>
+<script src="./assets/js/vendor/jquery.fancybox.min.js"></script>
 <!-- Main Script -->
 <script src="./assets/js/common.js"></script>
 
