@@ -3551,7 +3551,8 @@ img {
       font-size: 14px;
       font-weight: 500;
       color: #2a354c;
-      line-height: 16px; }
+      line-height: 16px;
+      padding: 0px 320px; }
   .voting-banner {
     background: url("../images/banner-voting.png") no-repeat;
     background-size: cover;
@@ -3628,10 +3629,14 @@ img {
           margin-right: 0px; }
 
 @media only screen and (max-width: 1440px) {
+  .voting-title p {
+    padding: 0px 150px; }
   .voting-banner .content {
     padding: 90px 0px 114px; } }
 
 @media only screen and (max-width: 992px) {
+  .voting-title p {
+    padding: 0px 100px; }
   .voting-banner .content {
     width: 730px; }
     .voting-banner .content .item-image {
@@ -3641,6 +3646,8 @@ img {
       font-size: 16px; } }
 
 @media only screen and (max-width: 768px) {
+  .voting-title p {
+    padding: 0px 20px; }
   .voting-banner .content {
     width: 550px; }
     .voting-banner .content .item {
@@ -3700,51 +3707,63 @@ img {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .modal-body .content-des h3 {
-    font-size: 30px;
-    font-weight: 800;
-    color: #f2792a;
-    text-align: center;
-    margin-bottom: 20px; }
-  .modal-body .content-des .action {
-    text-align: center;
-    margin-bottom: 16px; }
-    .modal-body .content-des .action .btn {
-      padding: 0px;
-      margin: 0px 20px; }
-      .modal-body .content-des .action .btn a {
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 76px;
-        height: 40px;
-        background-color: #d7d7d7;
-        border: 2px solid transparent;
-        -webkit-border-radius: 40px;
-        -khtml-border-radius: 40px;
-        -moz-border-radius: 40px;
-        -ms-border-radius: 40px;
-        -o-border-radius: 40px;
-        border-radius: 40px;
-        -webkit-transition: all 0.3s;
-        -khtml-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s; }
-        .modal-body .content-des .action .btn a:hover {
-          background-color: #f2f2f2;
-          border: 2px solid #f2792a; }
-      .modal-body .content-des .action .btn span {
-        font-size: 12px;
-        font-weight: 800;
+  .modal-body .content-des {
+    width: 100%; }
+    .modal-body .content-des h3 {
+      font-size: 30px;
+      font-weight: 800;
+      color: #f2792a;
+      text-align: center;
+      margin-bottom: 20px; }
+    .modal-body .content-des .action {
+      text-align: center;
+      margin-bottom: 16px; }
+      .modal-body .content-des .action .btn {
+        padding: 0px;
+        margin: 0px 20px; }
+        .modal-body .content-des .action .btn a {
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 76px;
+          height: 40px;
+          background-color: #d7d7d7;
+          border: 2px solid transparent;
+          -webkit-border-radius: 40px;
+          -khtml-border-radius: 40px;
+          -moz-border-radius: 40px;
+          -ms-border-radius: 40px;
+          -o-border-radius: 40px;
+          border-radius: 40px;
+          -webkit-transition: all 0.3s;
+          -khtml-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s; }
+          .modal-body .content-des .action .btn a:hover {
+            background-color: #f2f2f2;
+            border: 2px solid #f2792a; }
+        .modal-body .content-des .action .btn span {
+          font-size: 12px;
+          font-weight: 800;
+          color: #2a354c; }
+    .modal-body .content-des .content-editor {
+      overflow: auto;
+      height: 250px; }
+      .modal-body .content-des .content-editor .orange {
+        color: #f2792a; }
+      .modal-body .content-des .content-editor .blue {
         color: #2a354c; }
-  .modal-body .content-des .content-editor {
-    overflow: auto;
-    height: 250px; }
+      .modal-body .content-des .content-editor .center {
+        text-align: center; }
+      .modal-body .content-des .content-editor .underline {
+        text-decoration: underline; }
+      .modal-body .content-des .content-editor .paddingleft {
+        padding-left: 25px; }
 
 .about-awards {
   font-family: "Myriad Pro";
