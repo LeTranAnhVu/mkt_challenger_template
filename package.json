@@ -15,7 +15,7 @@
     "@babel/preset-env": "7.0.0-beta.34",
     "autoprefixer": "7.2.2",
     "babel-loader": "8.0.0-beta.0",
-    "browser-sync": "2.18.13",
+    "browser-sync": "2.27.10",
     "createjs": "^1.0.1",
     "createjs-easeljs": "^0.8.2",
     "createjs-module": "^0.8.3",
