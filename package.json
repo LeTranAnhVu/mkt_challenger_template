@@ -11,10 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "7.0.0-beta.34",
+    "@babel/core": "7.20.7",
     "@babel/preset-env": "7.0.0-beta.34",
     "autoprefixer": "7.2.2",
-    "babel-loader": "8.0.0-beta.0",
+    "babel-loader": "8.3.0",
     "browser-sync": "2.18.13",
     "createjs": "^1.0.1",
     "createjs-easeljs": "^0.8.2",
@@ -34,7 +34,7 @@
     "postcss-nested": "3.0.0",
     "postcss-simple-vars": "4.1.0",
     "svg.js": "^2.6.4",
-    "webpack": "3.10.0"
+    "webpack": "5.75.0"
   },
   "dependencies": {
     "countup.js": "^2.0.4",
